@@ -5,6 +5,8 @@ include:
   - mat.packages.python3-pip
   - mat.packages.adb
   - mat.packages.sqlite3
+  - mat.packages.software-properties-common
+  - mat.packages.libswt-gtk-4-java
 
 mat-packages:
   test.nop:
@@ -15,3 +17,5 @@ mat-packages:
       - sls: mat.packages.python3-pip
       - sls: mat.packages.adb
       - sls: mat.packages.sqlite3
+      - sls: mat.packages.software-properties-common
+      - sls: mat.packages.libswt-gtk-4-java

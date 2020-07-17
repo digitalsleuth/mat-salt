@@ -5,6 +5,7 @@ include:
   - mat.repos.docker
   - mat.repos.universe
   - mat.repos.nodejs
+  - mat.repos.openjdk
   
 mat-repos:
   test.nop:
@@ -15,3 +16,4 @@ mat-repos:
       - sls: mat.repos.docker
       - sls: mat.repos.universe
       - sls: mat.repos.nodejs
+      - sls: mat.repos.openjdk
