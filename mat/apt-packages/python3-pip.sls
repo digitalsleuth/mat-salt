@@ -1,5 +1,5 @@
 include:
-  - mat.packages.python3
+  - mat.apt-packages.python3
   
 python3-pip:
   pkg.installed

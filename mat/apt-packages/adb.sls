@@ -6,7 +6,5 @@
 # License: Proprietary - https://developer.android.com/studio/terms
 # Notes: adb
 
-include:
-
 adb:
   pkg.installed

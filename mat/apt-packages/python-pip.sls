@@ -1,5 +1,5 @@
 include:
-  - mat.packages.python
+  - mat.apt-packages.python
   
 python-pip:
   pkg.installed
