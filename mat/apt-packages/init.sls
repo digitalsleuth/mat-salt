@@ -11,6 +11,10 @@ include:
   - mat.apt-packages.open-vm-tools-desktop
   - mat.apt-packages.firefox
   - mat.apt-packages.python3-pyqt5
+  - mat.apt-packages.default-jre
+  - mat.apt-packages.baksmali
+  - mat.apt-packages.dex2jar
+  - mat.apt-packages.procyon-decompiler
 
 mat-apt-packages:
   test.nop:
@@ -27,3 +31,7 @@ mat-apt-packages:
       - sls: mat.apt-packages.open-vm-tools-desktop
       - sls: mat.apt-packages.firefox
       - sls: mat.apt-packages.python3-pyqt5
+      - sls: mat.apt-packages.default-jre
+      - sls: mat.apt-packages.baksmali
+      - sls: mat.apt-packages.dex2jar
+      - sls: mat.apt-packages.procyon-decompiler

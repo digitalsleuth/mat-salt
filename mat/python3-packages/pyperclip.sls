@@ -1,5 +1,6 @@
 include:
   - mat.packages.python3-pip
+  - mat.packages.python-pip
 
 mat-python3-packages-pyperclip:
   pip.installed:

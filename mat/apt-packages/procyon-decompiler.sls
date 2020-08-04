@@ -1,0 +1,2 @@
+procyon-decompiler:
+  pkg.installed
