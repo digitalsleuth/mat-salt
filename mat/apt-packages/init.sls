@@ -15,6 +15,8 @@ include:
   - mat.apt-packages.baksmali
   - mat.apt-packages.dex2jar
   - mat.apt-packages.procyon-decompiler
+  - mat.apt-packages.unzip
+  - mat.apt-packages.libmagic-dev
 
 mat-apt-packages:
   test.nop:
@@ -35,3 +37,5 @@ mat-apt-packages:
       - sls: mat.apt-packages.baksmali
       - sls: mat.apt-packages.dex2jar
       - sls: mat.apt-packages.procyon-decompiler
+      - sls: mat.apt-packages.unzip
+      - sls: mat.apt-packages.libmagic-dev
