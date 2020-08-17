@@ -15,7 +15,6 @@ include:
   - mat.apt-packages.dex2jar
   - mat.apt-packages.procyon-decompiler
   - mat.apt-packages.default-jre
-  - mat.config.user
 
 mat-python3-packages-droidlysis:
   pip.installed:
