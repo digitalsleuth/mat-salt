@@ -17,6 +17,8 @@ include:
   - mat.apt-packages.procyon-decompiler
   - mat.apt-packages.unzip
   - mat.apt-packages.libmagic-dev
+  - mat.apt-packages.git
+  - mat.apt-packages.radare2
 
 mat-apt-packages:
   test.nop:
@@ -39,3 +41,5 @@ mat-apt-packages:
       - sls: mat.apt-packages.procyon-decompiler
       - sls: mat.apt-packages.unzip
       - sls: mat.apt-packages.libmagic-dev
+      - sls: mat.apt-packages.git
+      - sls: mat.apt-packages.radare2
