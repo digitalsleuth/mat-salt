@@ -3,6 +3,7 @@ include:
   - mat.tools.apktool
   - mat.tools.cutter
   - mat.tools.android-studio
+  - mat.tools.android-ndk
 
 mat-tools:
   test.nop:
@@ -11,3 +12,4 @@ mat-tools:
       - sls: mat.tools.apktool
       - sls: mat.tools.cutter
       - sls: mat.tools.android-studio
+      - sls: mat.tools.android-ndk
