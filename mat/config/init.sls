@@ -3,7 +3,7 @@ include:
   - mat.config.salt-minion
   - mat.config.sudoers
   - mat.config.bashrc
-  - mat.config.androind-ndk
+  - mat.config.android-ndk
   
 mat-config:
   test.nop:

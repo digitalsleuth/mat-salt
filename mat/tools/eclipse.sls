@@ -1,6 +1,6 @@
 include:
-  - mat.packages.default-jdk
-  - mat.packages.libswt-gtk-4-java
+  - mat.apt-packages.default-jdk
+  - mat.apt-packages.libswt-gtk-4-java
 
 mat-tools-eclipse-source:
   file.managed:
@@ -27,5 +27,5 @@ mat-tools-eclipse-symlink:
     - watch:
       - archive: mat-tools-eclipse-archive
     - require:
-      - sls: mat.packages.default-jdk
-      - sls: mat.packages.libswt-gtk-4-java
+      - sls: mat.apt-packages.default-jdk
+      - sls: mat.apt-packages.libswt-gtk-4-java

@@ -1,5 +1,5 @@
 include:
-  - mat.packages.software-properties-common
+  - mat.apt-packages.software-properties-common
 
 openjdk-repo:
   pkgrepo.managed:
@@ -7,4 +7,4 @@ openjdk-repo:
     - ppa: openjdk-r/ppa
     - refresh: true
     - require:
-      - sls: mat.packages.software-properties-common
+      - sls: mat.apt-packages.software-properties-common
