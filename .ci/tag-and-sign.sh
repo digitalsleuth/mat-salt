@@ -49,7 +49,7 @@ echo "==> Creating GitHub Release"
 RELEASE_ID=`curl -XPOST -H "Authorization: token ${GITHUB_ACCESS_TOKEN}" -q https://api.github.com/repos/digitalsleuth/mat-salt/releases -d "{\"tag_name\": \"$TAG_NAME\", \"prerelease\": $PRERELEASE}" | jq .id`
 
 echo "==> Downloading tar.gz file for tag from GitHub"
-curl -qL -o /tmp/mat-salt-${TAG_NAME}.tar.gz https://github.com/mat/mat-salt/archive/$TAG_NAME.tar.gz
+curl -qL -o /tmp/mat-salt-${TAG_NAME}.tar.gz https://github.com/digitalsleuth/mat-salt/archive/$TAG_NAME.tar.gz
 
 echo "==> Generating SHA256 of tar.gz"
 shasum -a 256 /tmp/mat-salt-$TAG_NAME.tar.gz > /tmp/mat-salt-$TAG_NAME.tar.gz.sha256
