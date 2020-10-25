@@ -7,12 +7,13 @@
 # Notes: frida, frida-ps, frida-trace, frida-discover, frida-ls-devices, frida-kill
 
 include:
-  - mat.apt-packages.python-pip
+  - mat.apt-packages.python2-pip
   - mat.apt-packages.python3-pip
 
 mat-python3-packages-frida-install:
   pip.installed:
     - name: frida-tools
     - bin_env: /usr/bin/python3
+    - upgrade: True
     - require:
       - sls: mat.apt-packages.python3-pip

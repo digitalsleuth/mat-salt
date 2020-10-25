@@ -1,21 +1,12 @@
-{%- set version = salt['grains.get']('mat_version', 'stable') -%}
-
-{%- if version == "stable" %}
-
-remnux-dev:
-  pkgrepo.absent:
-    - ppa: remnux/dev
-
-{%- else %}
-
-remnux-stable:
-  pkgrepo.absent:
-    - ppa: remnux/stable
-
-{%- endif %}
-
+{%- if grains['oscodename'] == "bionic" %}
 remnux-repo:
   pkgrepo.managed:
-    - ppa: remnux/{{ version }}
+    - ppa: remnux/stable
     - refresh: true
     - keyid_ppa: true
+
+{%- elif grains['oscodename'] == "focal" %}
+remnux-repo:
+  test.nop
+
+{%- endif %}

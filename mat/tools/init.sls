@@ -4,6 +4,8 @@ include:
   - mat.tools.cutter
   - mat.tools.android-studio
   - mat.tools.android-ndk
+  - mat.tools.axmlprinter2
+  - mat.tools.pvrtextools
 
 mat-tools:
   test.nop:
@@ -13,3 +15,5 @@ mat-tools:
       - sls: mat.tools.cutter
       - sls: mat.tools.android-studio
       - sls: mat.tools.android-ndk
+      - sls: mat.tools.axmlprinter2
+      - sls: mat.tools.pvrtextools
