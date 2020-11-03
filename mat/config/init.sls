@@ -4,6 +4,7 @@ include:
   - mat.config.sudoers
   - mat.config.bashrc
   - mat.config.android-ndk
+  - mat.config.flexdecrypt-folder
   
 mat-config:
   test.nop:
@@ -13,3 +14,4 @@ mat-config:
       - sls: mat.config.sudoers
       - sls: mat.config.bashrc
       - sls: mat.config.android-ndk
+      - sls: mat.config.flexdecrypt-folder

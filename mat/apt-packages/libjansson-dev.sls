@@ -1,0 +1,2 @@
+libjansson-dev:
+  pkg.installed

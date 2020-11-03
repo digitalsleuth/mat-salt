@@ -1,7 +1,7 @@
 include:
   - mat.repos
   - mat.apt-packages
-  - mat.python-packages
+  - mat.python2-packages
   - mat.python3-packages
   - mat.scripts
   - mat.config
@@ -16,7 +16,7 @@ mat-addon-version-file:
     - require:
       - sls: mat.repos
       - sls: mat.apt-packages
-      - sls: mat.python-packages
+      - sls: mat.python2-packages
       - sls: mat.python3-packages
       - sls: mat.scripts
       - sls: mat.config

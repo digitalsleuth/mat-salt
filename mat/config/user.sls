@@ -26,5 +26,4 @@ mat-user-{{ user }}:
     - shell: /bin/bash
     - home: {{ home }}
     - password: $6$YKzrzcRTQ1418osj$ndiuDvWBTpa/FHtGoYBz6jsJJ5DfHj.XErh31mmKvoECZtMLnIFfVbDKuedj4YMmRc0oWE0QIeFUR6pbOpXjS.
-
 {% endif %}
