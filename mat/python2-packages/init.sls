@@ -5,7 +5,7 @@ include:
 
 mat-python2-packages:
   test.nop:
-    require:
+    - require:
       - sls: mat.python2-packages.pymongo
       - sls: mat.python2-packages.python-magic
       - sls: mat.python2-packages.requests
