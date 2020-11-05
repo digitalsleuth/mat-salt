@@ -7,6 +7,7 @@ include:
   - mat.apt-packages.curl
   - mat.apt-packages.default-jre
   - mat.apt-packages.dex2jar
+  - mat.apt-packages.docker
   - mat.apt-packages.drozer
   - mat.apt-packages.firefox
   - mat.apt-packages.flex
@@ -18,8 +19,6 @@ include:
   - mat.apt-packages.libswt-gtk-4-java
   - mat.apt-packages.libtool
   - mat.apt-packages.nodejs
-  - mat.apt-packages.open-vm-tools
-  - mat.apt-packages.open-vm-tools-desktop
   - mat.apt-packages.pkg-config
   - mat.apt-packages.procyon-decompiler
   - mat.apt-packages.python2
@@ -44,6 +43,7 @@ mat-apt-packages:
       - sls: mat.apt-packages.curl
       - sls: mat.apt-packages.default-jre
       - sls: mat.apt-packages.dex2jar
+      - sls: mat.apt-packages.docker
       - sls: mat.apt-packages.drozer
       - sls: mat.apt-packages.firefox
       - sls: mat.apt-packages.flex
@@ -55,8 +55,6 @@ mat-apt-packages:
       - sls: mat.apt-packages.libswt-gtk-4-java
       - sls: mat.apt-packages.libtool
       - sls: mat.apt-packages.nodejs
-      - sls: mat.apt-packages.open-vm-tools
-      - sls: mat.apt-packages.open-vm-tools-desktop
       - sls: mat.apt-packages.pkg-config
       - sls: mat.apt-packages.procyon-decompiler
       - sls: mat.apt-packages.python2

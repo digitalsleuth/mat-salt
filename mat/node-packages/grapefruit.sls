@@ -22,13 +22,14 @@ mat-node-packages-grapefruit-git:
 
 mat-node-packages-grapefruit-install:
   cmd.run:
-    - name: npm install --user {{ user }} --unsafe-perm
+#    - name: npm install --user {{ user }} --unsafe-perm
+    - name: npm install
     - cwd: /usr/local/grapefruit
     - require:
       - sls: mat.apt-packages.nodejs
       - sls: mat.apt-packages.tmux
       - sls: mat.config.user
-    
+
 mat-node-packages-grapefruit-wrapper:
   file.managed:
     - name: /usr/local/bin/grapefruit
