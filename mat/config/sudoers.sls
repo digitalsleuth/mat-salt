@@ -2,6 +2,7 @@
 
 include:
   - mat.config.user
+  - mat.apt-packages.sudo
 
 mat-config-sudoers:
   file.append:
@@ -10,3 +11,4 @@ mat-config-sudoers:
     - makedirs: True
     - require:
       - user: mat-user-{{ user }}
+      - sls: mat.apt-packages.sudo

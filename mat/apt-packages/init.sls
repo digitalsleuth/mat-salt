@@ -30,6 +30,7 @@ include:
   - mat.apt-packages.software-properties-common
   - mat.apt-packages.sqlite3
   - mat.apt-packages.sqlitebrowser
+  - mat.apt-packages.sudo
   - mat.apt-packages.unzip
 
 mat-apt-packages:
@@ -66,5 +67,6 @@ mat-apt-packages:
       - sls: mat.apt-packages.software-properties-common
       - sls: mat.apt-packages.sqlite3
       - sls: mat.apt-packages.sqlitebrowser
+      - sls: mat.apt-packages.sudo
       - sls: mat.apt-packages.unzip
 

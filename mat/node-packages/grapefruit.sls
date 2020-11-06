@@ -25,6 +25,7 @@ mat-node-packages-grapefruit-install:
 #    - name: npm install --user {{ user }} --unsafe-perm
     - name: npm install
     - cwd: /usr/local/grapefruit
+#    - runas: {{ user }}
     - require:
       - sls: mat.apt-packages.nodejs
       - sls: mat.apt-packages.tmux
