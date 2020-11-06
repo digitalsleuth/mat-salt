@@ -6,11 +6,11 @@
   {% set home = "/home/" + user %}
 {% endif %}
 
-{% set all_users = salt['user.list_users']() %}
-include:
-  - mat.config.sudoers
+{% set all_users = salt['user.list_users']() %} 
 
 {% if user in all_users %}
+include:
+  - mat.config.sudoers
 
 mat-user-{{ user }}:
   user.present:
