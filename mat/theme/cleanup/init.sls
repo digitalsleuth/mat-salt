@@ -1,5 +1,11 @@
 {%- set user = salt['pillar.get']('mat_user', 'mat') -%}
 
+{% if user == "root" %}
+  {% set home = "/root" %}
+{% else %}
+  {% set home = "/home/" + user %}
+{% endif %}
+
 include:
   - mat.apt-packages.docker
 
@@ -49,3 +55,14 @@ mat-theme-cleanup-docker-wrapper:
 mat-theme-cleanup-autoremove:
   cmd.run:
     - name: apt-get autoremove -y
+
+mat-user-directories-{{ user }}:
+  file.directory:
+    - user: {{ user }}
+    - group: {{ user }}
+    - name: {{ home }}
+    - recurse:
+      - user
+      - group
+    - require:
+      - user: mat-user-{{ user }}

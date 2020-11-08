@@ -30,15 +30,15 @@ mat-user-{{ user }}:
     - password: $6$YKzrzcRTQ1418osj$ndiuDvWBTpa/FHtGoYBz6jsJJ5DfHj.XErh31mmKvoECZtMLnIFfVbDKuedj4YMmRc0oWE0QIeFUR6pbOpXjS.
 {% endif %}
 
-mat-user-directories-{{ user }}:
-  file.directory:
-    - user: {{ user }}
-    - group: {{ user }}
-    - name: {{ home }}
-    - recurse:
-      - user
-      - group
-    - require:
-      - user: mat-user-{{ user }}
+#mat-user-directories-{{ user }}:
+#  file.directory:
+#    - user: {{ user }}
+#    - group: {{ user }}
+#    - name: {{ home }}
+#    - recurse:
+#      - user
+#      - group
+#    - require:
+#      - user: mat-user-{{ user }}
 
 

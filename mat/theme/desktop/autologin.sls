@@ -2,7 +2,6 @@
 
 include:
   - mat.theme.desktop.ubuntu-budgie-desktop
-  - mat.theme.desktop.lightdm
 
 mat-desktop-autologin-user:
   file.append:
@@ -10,4 +9,3 @@ mat-desktop-autologin-user:
     - text: autologin-user={{ user }}
     - require:
       - sls: mat.theme.desktop.ubuntu-budgie-desktop
-      - sls: mat.theme.desktop.lightdm
