@@ -5,6 +5,8 @@
 # Author:
 # License: 
 # Notes:
+include:
+  - mat.tools.android-ndk
 
 mat-tools-android-studio-source:
   file.managed:  
@@ -20,6 +22,8 @@ mat-tools-android-studio-archive:
     - enforce_toplevel: True
     - watch:
       - file: mat-tools-android-studio-source
+    - require:
+      - sls: mat.tools.android-ndk
 
 mat-tools-android-studio-wrapper:
   file.managed:

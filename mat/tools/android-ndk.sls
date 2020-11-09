@@ -18,7 +18,7 @@ include:
   - mat.config.user
   - mat.config.bashrc
   - mat.config.android-ndk
-  - mat.tools.android-studio
+#  - mat.tools.android-studio
 
 mat-tools-android-ndk-source:
   file.managed:
@@ -34,5 +34,5 @@ mat-tools-android-ndk-archive:
     - enforce_toplevel: True
     - watch:
       - file: mat-tools-android-ndk-source
-    - require:
-      - sls: mat.tools.android-studio
+#    - require:
+#      - sls: mat.tools.android-studio
