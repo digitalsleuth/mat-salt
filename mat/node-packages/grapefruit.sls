@@ -20,12 +20,22 @@ mat-node-packages-grapefruit-git:
     - require:
       - sls: mat.apt-packages.git
 
+mat-node-packages-grapefruit-directory-{{ user }}:
+  file.directory:
+    - user: {{ user }}
+    - group: {{ user }}
+    - name: /usr/local/grapefruit
+    - recurse:
+      - user
+      - group
+    - require:
+      - user: mat-user-{{ user }}
+
 mat-node-packages-grapefruit-install:
   cmd.run:
-#    - name: npm install --user {{ user }} --unsafe-perm
     - name: npm install
     - cwd: /usr/local/grapefruit
-#    - runas: {{ user }}
+    - runas: {{ user }}
     - require:
       - sls: mat.apt-packages.nodejs
       - sls: mat.apt-packages.tmux
