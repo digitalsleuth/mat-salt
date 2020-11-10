@@ -2,6 +2,7 @@ include:
   - mat.tools.androbugs
   - mat.tools.android-studio
   - mat.tools.apktool
+  - mat.tools.apollo
   - mat.tools.axmlprinter2
   - mat.tools.burpsuite-community
   - mat.tools.bytecode-viewer
@@ -24,6 +25,7 @@ mat-tools:
       - sls: mat.tools.androbugs
       - sls: mat.tools.android-studio
       - sls: mat.tools.apktool
+      - sls: mat.tools.apollo
       - sls: mat.tools.axmlprinter2
       - sls: mat.tools.burpsuite-community
       - sls: mat.tools.bytecode-viewer
