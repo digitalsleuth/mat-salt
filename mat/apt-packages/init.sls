@@ -19,6 +19,7 @@ include:
   - mat.apt-packages.libswt-gtk-4-java
   - mat.apt-packages.libtool
   - mat.apt-packages.nodejs
+  - mat.apt-packages.perl
   - mat.apt-packages.pkg-config
   - mat.apt-packages.procyon-decompiler
   - mat.apt-packages.python2
@@ -31,7 +32,10 @@ include:
   - mat.apt-packages.sqlite3
   - mat.apt-packages.sqlitebrowser
   - mat.apt-packages.sudo
+  - mat.apt-packages.super-analyzer
   - mat.apt-packages.unzip
+  - mat.apt-packages.wireshark
+  - mat.apt-packages.xdg-utils
 
 mat-apt-packages:
   test.nop:
@@ -56,6 +60,7 @@ mat-apt-packages:
       - sls: mat.apt-packages.libswt-gtk-4-java
       - sls: mat.apt-packages.libtool
       - sls: mat.apt-packages.nodejs
+      - sls: mat.apt-packages.perl
       - sls: mat.apt-packages.pkg-config
       - sls: mat.apt-packages.procyon-decompiler
       - sls: mat.apt-packages.python2
@@ -68,5 +73,7 @@ mat-apt-packages:
       - sls: mat.apt-packages.sqlite3
       - sls: mat.apt-packages.sqlitebrowser
       - sls: mat.apt-packages.sudo
+      - sls: mat.apt-packages.super-analyzer
       - sls: mat.apt-packages.unzip
-
+      - sls: mat.apt-packages.wireshark
+      - sls: mat.apt-packages.xdg-utils

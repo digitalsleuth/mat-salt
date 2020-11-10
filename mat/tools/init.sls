@@ -3,6 +3,7 @@ include:
   - mat.tools.android-studio
   - mat.tools.apktool
   - mat.tools.axmlprinter2
+  - mat.tools.burpsuite-community
   - mat.tools.bytecode-viewer
   - mat.tools.classyshark
   - mat.tools.cutter
@@ -12,7 +13,9 @@ include:
   - mat.tools.ghidra
   - mat.tools.impactor
   - mat.tools.jadx
+  - mat.tools.jd-gui
   - mat.tools.pvrtextools
+  - mat.tools.runtime-mobile-security
   - mat.tools.yara
 
 mat-tools:
@@ -22,6 +25,7 @@ mat-tools:
       - sls: mat.tools.android-studio
       - sls: mat.tools.apktool
       - sls: mat.tools.axmlprinter2
+      - sls: mat.tools.burpsuite-community
       - sls: mat.tools.bytecode-viewer
       - sls: mat.tools.classyshark
       - sls: mat.tools.cutter
@@ -31,5 +35,7 @@ mat-tools:
       - sls: mat.tools.ghidra
       - sls: mat.tools.impactor
       - sls: mat.tools.jadx
+      - sls: mat.tools.jd-gui
       - sls: mat.tools.pvrtextools
+      - sls: mat.tools.runtime-mobile-security
       - sls: mat.tools.yara

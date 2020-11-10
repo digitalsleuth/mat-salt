@@ -1,0 +1,2 @@
+wireshark-dev:
+  pkg.installed
