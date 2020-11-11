@@ -15,6 +15,7 @@ include:
   - mat.tools.impactor
   - mat.tools.jadx
   - mat.tools.jd-gui
+  - mat.tools.openmf
   - mat.tools.pvrtextools
   - mat.tools.runtime-mobile-security
   - mat.tools.yara
@@ -38,6 +39,7 @@ mat-tools:
       - sls: mat.tools.impactor
       - sls: mat.tools.jadx
       - sls: mat.tools.jd-gui
+      - sls: mat.tools.openmf
       - sls: mat.tools.pvrtextools
       - sls: mat.tools.runtime-mobile-security
       - sls: mat.tools.yara
