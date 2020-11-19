@@ -11,9 +11,9 @@ include:
 
 mat-tools-ghidra-source:
   file.managed:
-    - name: /usr/local/src/mat/files/ghidra_9.1.2_PUBLIC_20200212.zip
-    - source: https://ghidra-sre.org/ghidra_9.1.2_PUBLIC_20200212.zip
-    - source_hash: sha256=ebe3fa4e1afd7d97650990b27777bb78bd0427e8e70c1d0ee042aeb52decac61
+    - name: /usr/local/src/mat/files/ghidra_9.2_PUBLIC_20201113.zip
+    - source: https://ghidra-sre.org/ghidra_9.2_PUBLIC_20201113.zip
+    - source_hash: sha256=ffebd3d87bc7c6d9ae1766dd3293d1fdab3232a99b170f8ea8b57497a1704ff6
     - makedirs: true
     - require:
       - sls: mat.apt-packages.default-jdk
@@ -21,13 +21,13 @@ mat-tools-ghidra-source:
 mat-tools-ghidra-archive:
   archive.extracted:
     - name: /usr/local/
-    - source: /usr/local/src/mat/files/ghidra_9.1.2_PUBLIC_20200212.zip
+    - source: /usr/local/src/mat/files/ghidra_9.2_PUBLIC_20201113.zip
     - enforce_toplevel: true
     - watch:
       - file: mat-tools-ghidra-source
 
 /usr/local/bin/ghidra:
   file.symlink:
-    - target: /usr/local/ghidra_9.1.2_PUBLIC/ghidraRun
+    - target: /usr/local/ghidra_9.2_PUBLIC/ghidraRun
     - watch:
       - archive: mat-tools-ghidra-archive

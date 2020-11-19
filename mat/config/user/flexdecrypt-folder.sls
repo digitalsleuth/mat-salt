@@ -18,5 +18,3 @@ mat-config-flexdecrypt-folder:
     - mode: 755
     - require:
       - user: mat-user-{{ user }}
-    - require:
-      - sls: mat.config.user
