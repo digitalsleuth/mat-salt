@@ -16,7 +16,6 @@
 
 include:
   - mat.config.user
-  - mat.config.flexdecrypt-folder
 
 mat-tools-flexdecrypt-source:
   file.managed:
@@ -27,4 +26,4 @@ mat-tools-flexdecrypt-source:
     - group: {{ user }}
     - require:
       - sls: mat.config.user
-      - sls: mat.config.flexdecrypt-folder
+

@@ -10,7 +10,7 @@
 
 {% if user in all_users %}
 include:
-  - mat.config.sudoers
+  - mat.config.user.sudoers
 
 mat-user-{{ user }}:
   user.present:

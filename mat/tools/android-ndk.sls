@@ -15,8 +15,6 @@
 {% endif %}
 
 include:
-  - mat.config.user
-  - mat.config.bashrc
   - mat.config.android-ndk
 #  - mat.tools.android-studio
 

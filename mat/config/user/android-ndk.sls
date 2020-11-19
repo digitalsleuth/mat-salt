@@ -8,7 +8,6 @@
 
 include:
   - mat.config.user
-  - mat.config.bashrc
   - mat.tools.android-ndk
 
 mat-config-android-ndk-bashrc:
@@ -18,3 +17,4 @@ mat-config-android-ndk-bashrc:
     - require:
       - user: mat-user-{{ user }}
       - sls: mat.tools.android-ndk
+      - sls: mat.config.user
