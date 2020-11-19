@@ -15,7 +15,7 @@
 {% endif %}
 
 include:
-  - mat.config.android-ndk
+  - mat.config.user.android-ndk
 #  - mat.tools.android-studio
 
 mat-tools-android-ndk-source:
@@ -32,5 +32,6 @@ mat-tools-android-ndk-archive:
     - enforce_toplevel: True
     - watch:
       - file: mat-tools-android-ndk-source
-#    - require:
-#      - sls: mat.tools.android-studio
+    - require:
+      - sls: mat.tools.android-studio
+      - sls: mat.config.user.android-ndk
