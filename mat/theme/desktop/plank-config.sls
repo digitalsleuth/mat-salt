@@ -7,13 +7,13 @@
 {% endif %}
 
 include:
-  - mat.tools.android-ndk
   - mat.config.user
+  - mat.dedicated
 
-mat-config-android-ndk-bashrc:
-  file.append:
-    - name: {{ home }}/.bashrc
-    - text: 'export ANDROID_NDK=/usr/local/android-ndk-r21d'
+mat-theme-desktop-plank-config:
+  file.recurse:
+    - source: salt://mat/theme/desktop/plank
+    - name: {{ home }}/.config/plank/dock1/launchers/
     - require:
       - user: mat-user-{{ user }}
-      - sls: mat.tools.android-ndk
+      - sls: mat.dedicated

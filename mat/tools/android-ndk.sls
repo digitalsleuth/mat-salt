@@ -15,7 +15,7 @@
 {% endif %}
 
 include:
-  - mat.config.user.android-ndk
+  - mat.config.user
 
 mat-tools-android-ndk-source:
   file.managed:
@@ -32,4 +32,4 @@ mat-tools-android-ndk-archive:
     - watch:
       - file: mat-tools-android-ndk-source
     - require:
-      - sls: mat.config.user.android-ndk
+      - user: mat-user-{{ user }}
