@@ -17,4 +17,3 @@ mat-config-android-ndk-bashrc:
     - require:
       - user: mat-user-{{ user }}
       - sls: mat.tools.android-ndk
-      - sls: mat.config.user
