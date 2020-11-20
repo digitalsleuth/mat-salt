@@ -14,6 +14,9 @@ mat-theme-desktop-plank-config:
   file.recurse:
     - source: salt://mat/theme/desktop/plank
     - name: {{ home }}/.config/plank/dock1/launchers/
+    - file_mode: 644
+    - user: {{ user }}
+    - group: {{ user }}
     - require:
       - user: mat-user-{{ user }}
       - sls: mat.dedicated
