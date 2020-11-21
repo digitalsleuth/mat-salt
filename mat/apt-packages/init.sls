@@ -8,7 +8,6 @@ include:
   - mat.apt-packages.default-jre
   - mat.apt-packages.dex2jar
   - mat.apt-packages.docker
-  - mat.apt-packages.drozer
   - mat.apt-packages.firefox
   - mat.apt-packages.flex
   - mat.apt-packages.git
@@ -49,7 +48,6 @@ mat-apt-packages:
       - sls: mat.apt-packages.default-jre
       - sls: mat.apt-packages.dex2jar
       - sls: mat.apt-packages.docker
-      - sls: mat.apt-packages.drozer
       - sls: mat.apt-packages.firefox
       - sls: mat.apt-packages.flex
       - sls: mat.apt-packages.git

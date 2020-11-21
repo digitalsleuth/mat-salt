@@ -14,7 +14,7 @@ mat-scripts-pidcat-source:
   file.managed:
     - name: /usr/local/bin/pidcat.py
     - source: https://github.com/JakeWharton/pidcat/raw/master/pidcat.py
-    - source_hash: sha256=6a7d873e6a05de0324e2b03a191ef7eb0a7cca6e32aabb16a15af5c74b857587
+    - source_hash: sha256=410fdd02b879db1cf3def292ab4981d159e95ff5c30ab2d7e937fa3367596f79
     - mode: 755
     - require:
       - sls: mat.apt-packages.python3
