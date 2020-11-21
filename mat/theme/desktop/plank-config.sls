@@ -8,7 +8,7 @@
 
 include:
   - mat.config.user
-  - mat.dedicated
+  - mat.theme.desktop.ubuntu-budgie-desktop
 
 mat-theme-desktop-plank-config:
   file.recurse:
@@ -19,4 +19,4 @@ mat-theme-desktop-plank-config:
     - group: {{ user }}
     - require:
       - user: mat-user-{{ user }}
-      - sls: mat.dedicated
+      - sls: mat.theme.desktop.ubuntu-budgie-desktop
