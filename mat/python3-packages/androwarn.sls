@@ -3,7 +3,7 @@ include:
 
 mat-python3-packages-androwarn:
   pip.installed:
-    - name: git+https://github.com/digitalsleuth/androwarn
+    - name: androwarn
     - bin_env: /usr/bin/python3
     - upgrade: True
     - require:
