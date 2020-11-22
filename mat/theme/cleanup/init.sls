@@ -9,14 +9,24 @@
 include:
   - mat.apt-packages.docker
 
-yelp:
-  pkg.removed
-
-avahi-daemon:
-  pkg.removed
-
-unattended-upgrades:
-  pkg.removed
+mat-theme-cleanup-extra-apps:
+  pkg.removed:
+    - pkgs:
+      - aisleriot
+      - avahi-daemon
+      - transmission
+      - transmission-common
+      - transmission-gtk
+      - caffeine
+      - cheese
+      - cheese-common
+      - libcheese-gtk25
+      - libcheese8
+      - gnome-mahjongg
+      - gnome-mines
+      - rhythmbox
+      - gnome-sudoku
+      - unattended-upgrades
 
 mat-theme-cleanup-disable-auto-upgrades:
   file.append:
