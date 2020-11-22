@@ -9,6 +9,7 @@ include:
   - mat.python3-packages.pyperclip
   - mat.python3-packages.qark
   - mat.python3-packages.smalisca
+  - mat.python3-packages.time-decode
   - mat.python3-packages.yara-python
 
 mat-python3-packages:
@@ -24,4 +25,5 @@ mat-python3-packages:
       - sls: mat.python3-packages.pyperclip
       - sls: mat.python3-packages.qark
       - sls: mat.python3-packages.smalisca
+      - sls: mat.python3-packages.time-decode
       - sls: mat.python3-packages.yara-python
