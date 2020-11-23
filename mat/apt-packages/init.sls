@@ -26,6 +26,7 @@ include:
   - mat.apt-packages.python3
   - mat.apt-packages.python3-pip
   - mat.apt-packages.python3-pyqt5
+  - mat.apt-packages.python3-tk
   - mat.apt-packages.radare2
   - mat.apt-packages.software-properties-common
   - mat.apt-packages.sqlite3
@@ -66,6 +67,7 @@ mat-apt-packages:
       - sls: mat.apt-packages.python3
       - sls: mat.apt-packages.python3-pip
       - sls: mat.apt-packages.python3-pyqt5
+      - sls: mat.apt-packages.python3-tk
       - sls: mat.apt-packages.radare2
       - sls: mat.apt-packages.software-properties-common
       - sls: mat.apt-packages.sqlite3

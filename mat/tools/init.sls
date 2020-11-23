@@ -1,4 +1,5 @@
 include:
+  - mat.tools.aleapp
   - mat.tools.androbugs
   - mat.tools.android-studio
   - mat.tools.apktool
@@ -13,6 +14,7 @@ include:
   - mat.tools.enjarify
   - mat.tools.flexdecrypt
   - mat.tools.ghidra
+  - mat.tools.ileapp
   - mat.tools.impactor
   - mat.tools.jadx
   - mat.tools.jd-gui
@@ -24,6 +26,7 @@ include:
 mat-tools:
   test.nop:
     - require:
+      - sls: mat.tools.aleapp
       - sls: mat.tools.androbugs
       - sls: mat.tools.android-studio
       - sls: mat.tools.apktool
@@ -38,6 +41,7 @@ mat-tools:
       - sls: mat.tools.enjarify
       - sls: mat.tools.flexdecrypt
       - sls: mat.tools.ghidra
+      - sls: mat.tools.ileapp
       - sls: mat.tools.impactor
       - sls: mat.tools.jadx
       - sls: mat.tools.jd-gui

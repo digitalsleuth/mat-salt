@@ -14,6 +14,7 @@ mat-python3-packages-axmlparserpy-install:
   pip.installed:
     - bin_env: /usr/bin/python3
     - name: git+https://github.com/kzjeef/axmlparserpy
+    - upgrade: True
     - require:
       - sls: mat.apt-packages.git
       - sls: mat.apt-packages.python3-pip
