@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "salt-call -l debug --local --retcode-passthrough --state-output=mixed state.sls mat.  pillar='{"mat_user": "mat"}'"
+echo "salt-call -l debug --local --retcode-passthrough --state-output=mixed state.sls mat.  pillar='{\"mat_user\": \"mat\"}'"
 set -x
 
 DISTRO=$1
