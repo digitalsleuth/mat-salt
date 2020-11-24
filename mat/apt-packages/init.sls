@@ -4,6 +4,7 @@ include:
   - mat.apt-packages.baksmali
   - mat.apt-packages.bison
   - mat.apt-packages.build-essential
+  - mat.apt-packages.cherrytree
   - mat.apt-packages.curl
   - mat.apt-packages.default-jre
   - mat.apt-packages.dex2jar
@@ -45,6 +46,7 @@ mat-apt-packages:
       - sls: mat.apt-packages.baksmali
       - sls: mat.apt-packages.bison
       - sls: mat.apt-packages.build-essential
+      - sls: mat.apt-packages.cherrytree
       - sls: mat.apt-packages.curl
       - sls: mat.apt-packages.default-jre
       - sls: mat.apt-packages.dex2jar
