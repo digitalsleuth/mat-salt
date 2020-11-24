@@ -4,4 +4,4 @@ include:
 libdate-calc-perl:
   pkg.installed:
     - require:
-      sls: mat.apt-packages.perl
+      - sls: mat.apt-packages.perl
