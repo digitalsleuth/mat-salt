@@ -7,6 +7,7 @@ include:
   - mat.python3-packages
   - mat.scripts
   - mat.tools
+  - mat.resources
 
 #mat-addon-version-file:
 #  file.managed:
