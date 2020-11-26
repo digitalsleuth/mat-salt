@@ -15,7 +15,7 @@
 {% endif %}
 
 include:
-  - mat.config.user
+  - mat.config.user.user
 
 mat-tools-flexdecrypt-source:
   file.managed:
@@ -25,5 +25,5 @@ mat-tools-flexdecrypt-source:
     - user: {{ user }}
     - group: {{ user }}
     - require:
-      - sls: mat.config.user
+      - user: mat-user-{{ user }}
 

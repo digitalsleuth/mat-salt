@@ -14,7 +14,7 @@ include:
   - mat.apt-packages.git
   - mat.apt-packages.ideviceinstaller
   - mat.apt-packages.ifuse
-  - mat.apt-packages.libimobiledevice
+  - mat.apt-packages.libimobiledevice6
   - mat.apt-packages.libjansson-dev
   - mat.apt-packages.libmagic-dev
   - mat.apt-packages.libplist3
@@ -64,7 +64,7 @@ mat-apt-packages:
       - sls: mat.apt-packages.git
       - sls: mat.apt-packages.ideviceinstaller
       - sls: mat.apt-packages.ifuse
-      - sls: mat.apt-packages.libimobiledevice
+      - sls: mat.apt-packages.libimobiledevice6
       - sls: mat.apt-packages.libjansson-dev
       - sls: mat.apt-packages.libmagic-dev
       - sls: mat.apt-packages.libplist3

@@ -1,2 +1,2 @@
-libimobiledevice:
+libimobiledevice6:
   pkg.installed
