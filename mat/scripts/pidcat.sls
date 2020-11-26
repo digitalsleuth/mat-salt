@@ -8,7 +8,7 @@
 
 include:
   - mat.apt-packages.python3
-  - mat.apt-packages.adb
+  - mat.apt-packages.android-tools-adb
 
 mat-scripts-pidcat-source:
   file.managed:
@@ -18,7 +18,7 @@ mat-scripts-pidcat-source:
     - mode: 755
     - require:
       - sls: mat.apt-packages.python3
-      - sls: mat.apt-packages.adb
+      - sls: mat.apt-packages.android-tools-adb
 
 mat-scripts-pidcat-shebang:
   file.replace:

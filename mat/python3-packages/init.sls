@@ -3,6 +3,7 @@ include:
   - mat.python3-packages.androwarn
   #- mat.python3-packages.apkid
   - mat.python3-packages.axmlparserpy
+  - mat.python3-packages.dnslib
   - mat.python3-packages.droidlysis
   - mat.python3-packages.frida
   - mat.python3-packages.objection
@@ -19,6 +20,7 @@ mat-python3-packages:
       - sls: mat.python3-packages.androwarn
       #- sls: mat.python3-packages.apkid
       - sls: mat.python3-packages.axmlparserpy
+      - sls: mat.python3-packages.dnslib
       - sls: mat.python3-packages.droidlysis
       - sls: mat.python3-packages.frida
       - sls: mat.python3-packages.objection
