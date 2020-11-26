@@ -11,12 +11,14 @@ include:
   - mat.tools.bytecode-viewer
   - mat.tools.classyshark
   - mat.tools.cutter
+  - mat.tools.cyberchef
   - mat.tools.eclipse
   - mat.tools.enjarify
   - mat.tools.flexdecrypt
   - mat.tools.ghidra
   - mat.tools.ileapp
   - mat.tools.impactor
+  - mat.tools.jad
   - mat.tools.jadx
   - mat.tools.jd-gui
   - mat.tools.openmf
@@ -40,12 +42,14 @@ mat-tools:
       - sls: mat.tools.bytecode-viewer
       - sls: mat.tools.classyshark
       - sls: mat.tools.cutter
+      - sls: mat.tools.cyberchef
       - sls: mat.tools.eclipse
       - sls: mat.tools.enjarify
       - sls: mat.tools.flexdecrypt
       - sls: mat.tools.ghidra
       - sls: mat.tools.ileapp
       - sls: mat.tools.impactor
+      - sls: mat.tools.jad
       - sls: mat.tools.jadx
       - sls: mat.tools.jd-gui
       - sls: mat.tools.openmf

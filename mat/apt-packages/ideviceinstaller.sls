@@ -1,0 +1,2 @@
+ideviceinstaller:
+  pkg.installed

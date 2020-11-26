@@ -12,16 +12,22 @@ include:
   - mat.apt-packages.firefox
   - mat.apt-packages.flex
   - mat.apt-packages.git
+  - mat.apt-packages.ideviceinstaller
+  - mat.apt-packages.ifuse
+  - mat.apt-packages.libimobiledevice
   - mat.apt-packages.libjansson-dev
   - mat.apt-packages.libmagic-dev
+  - mat.apt-packages.libplist3
   - mat.apt-packages.libprotobuf-c-dev
   - mat.apt-packages.libssl-dev
   - mat.apt-packages.libswt-gtk-4-java
   - mat.apt-packages.libtool
+  - mat.apt-packages.libusbmuxd4
   - mat.apt-packages.nodejs
   - mat.apt-packages.perl
   - mat.apt-packages.pkg-config
   - mat.apt-packages.procyon-decompiler
+  - mat.apt-packages.protobuf-compiler
   - mat.apt-packages.python2
   - mat.apt-packages.python2-pip
   - mat.apt-packages.python3
@@ -36,6 +42,7 @@ include:
   - mat.apt-packages.sudo
   - mat.apt-packages.super-analyzer
   - mat.apt-packages.unzip
+  - mat.apt-packages.usbmuxd
   - mat.apt-packages.wireshark
   - mat.apt-packages.xdg-utils
 
@@ -55,16 +62,22 @@ mat-apt-packages:
       - sls: mat.apt-packages.firefox
       - sls: mat.apt-packages.flex
       - sls: mat.apt-packages.git
+      - sls: mat.apt-packages.ideviceinstaller
+      - sls: mat.apt-packages.ifuse
+      - sls: mat.apt-packages.libimobiledevice
       - sls: mat.apt-packages.libjansson-dev
       - sls: mat.apt-packages.libmagic-dev
+      - sls: mat.apt-packages.libplist3
       - sls: mat.apt-packages.libprotobuf-c-dev
       - sls: mat.apt-packages.libssl-dev
       - sls: mat.apt-packages.libswt-gtk-4-java
       - sls: mat.apt-packages.libtool
+      - sls: mat.apt-packages.libusbmuxd4
       - sls: mat.apt-packages.nodejs
       - sls: mat.apt-packages.perl
       - sls: mat.apt-packages.pkg-config
       - sls: mat.apt-packages.procyon-decompiler
+      - sls: mat.apt-packages.protobuf-compiler
       - sls: mat.apt-packages.python2
       - sls: mat.apt-packages.python2-pip
       - sls: mat.apt-packages.python3
@@ -79,5 +92,6 @@ mat-apt-packages:
       - sls: mat.apt-packages.sudo
       - sls: mat.apt-packages.super-analyzer
       - sls: mat.apt-packages.unzip
+      - sls: mat.apt-packages.usbmuxd
       - sls: mat.apt-packages.wireshark
       - sls: mat.apt-packages.xdg-utils

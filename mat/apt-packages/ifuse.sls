@@ -1,0 +1,2 @@
+ifuse:
+  pkg.installed

@@ -1,0 +1,2 @@
+libirecovery:
+  pkg.installed

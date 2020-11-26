@@ -1,0 +1,2 @@
+libimobiledevice:
+  pkg.installed

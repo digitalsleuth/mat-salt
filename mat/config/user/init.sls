@@ -5,6 +5,7 @@ include:
   - mat.config.user.dot-cache
   - mat.config.user.flexdecrypt-folder
   - mat.config.user.sudoers
+  - mat.config.user.home-permissions
 
 mat-config-user:
   test.nop:
@@ -15,3 +16,4 @@ mat-config-user:
       - sls: mat.config.user.dot-cache
       - sls: mat.config.user.flexdecrypt-folder
       - sls: mat.config.user.sudoers
+      - sls: mat.config.user.home-permissions
