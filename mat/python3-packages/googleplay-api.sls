@@ -4,7 +4,7 @@ include:
   - mat.apt-packages.git
 
 mat-python3-packages-googleplay-api:
-  pip.installed
+  pip.installed:
     - name: git+https://github.com/NoMore201/googleplay-api
     - bin_env: /usr/bin/python3
     - upgrade: True
