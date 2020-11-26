@@ -4,6 +4,7 @@ include:
   - mat.tools.android-studio
   - mat.tools.apktool
   - mat.tools.apollo
+  - mat.tools.apple-cloud-notes-parser
   - mat.tools.axmlprinter
   - mat.tools.axmlprinter2
   - mat.tools.burpsuite-community
@@ -31,6 +32,7 @@ mat-tools:
       - sls: mat.tools.android-studio
       - sls: mat.tools.apktool
       - sls: mat.tools.apollo
+      - sls: mat.tools.apple-cloud-notes-parser
       - sls: mat.tools.axmlprinter
       - sls: mat.tools.axmlprinter2
       - sls: mat.tools.burpsuite-community

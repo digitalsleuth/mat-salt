@@ -8,6 +8,7 @@ include:
   - mat.scripts.itunes_backup2hashcat
   - mat.scripts.koodous-scripts
   - mat.scripts.pidcat
+  - mat.scripts.sqlite-miner
 
 mat-scripts:
   test.nop:
@@ -21,3 +22,4 @@ mat-scripts:
       - sls: mat.scripts.itunes_backup2hashcat
       - sls: mat.scripts.koodous-scripts
       - sls: mat.scripts.pidcat
+      - sls: mat.scripts.sqlite-miner
