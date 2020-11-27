@@ -40,6 +40,17 @@ mat-theme-desktop-applications-cyberchef:
     - require:
       - sls: mat.tools.cyberchef
 
+mat-theme-desktop-applications-cyberchef-icon:
+  file.managed:
+    - replace: False
+    - name: /usr/share/icons/cyberchef.png
+    - source: salt://mat/theme/desktop/applications/cyberchef.png
+    - makedirs: True
+    - watch:
+      - file: mat-theme-desktop-applications-cyberchef
+    - require:
+      - sls: mat.tools.cyberchef
+
 mat-theme-desktop-applications-autostart-tilix:
   file.copy:
     - name: {{ home }}/.config/autostart/com.gexperts.Tilix.desktop
