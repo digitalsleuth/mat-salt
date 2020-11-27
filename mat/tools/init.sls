@@ -25,6 +25,7 @@ include:
   - mat.tools.pvrtextools
   - mat.tools.runtime-mobile-security
   - mat.tools.simplify
+  - mat.tools.smali
   - mat.tools.yara
 
 mat-tools:
@@ -56,4 +57,5 @@ mat-tools:
       - sls: mat.tools.pvrtextools
       - sls: mat.tools.runtime-mobile-security
       - sls: mat.tools.simplify
+      - sls: mat.tools.smali
       - sls: mat.tools.yara
