@@ -19,3 +19,5 @@ cherrytree:
     - require:
       - sls: mat.apt-packages.libcanberra-gtk-module
       - sls: mat.repos.giuspen
+
+{% endif %}
