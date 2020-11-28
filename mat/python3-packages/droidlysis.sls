@@ -5,7 +5,11 @@
 # Author: cryptax
 # License: MIT License: https://github.com/cryptax/droidlysis/blob/master/LICENSE
 # Notes: droidlysis
-
+{% if grains['oscodename'] == "bionic" %}
+  {% set python3_version="python3.6" %}
+{% elif grains['oscodename'] == "focal" %}
+  {% set python3_version="python3.8" %}
+{% endif %}
 include:
   - mat.apt-packages.unzip
   - mat.tools.apktool
@@ -32,7 +36,7 @@ mat-python3-packages-droidlysis:
 
 mat-python3-packages-droidlysis-apktool-cfg:
   file.replace:
-    - name: /usr/local/lib/python3.6/dist-packages/droidconfig.py
+    - name: /usr/local/lib/{{ python3_version }}/dist-packages/droidconfig.py
     - pattern: '^APKTOOL_JAR.*$'
     - repl: 'APKTOOL_JAR = os.path.join(os.path.expanduser("/usr/local/apktool"), "apktool_2.4.1.jar")'
     - count: 1
@@ -42,7 +46,7 @@ mat-python3-packages-droidlysis-apktool-cfg:
 
 mat-python3-packages-droidlysis-baksmali-cfg:
   file.replace:
-    - name: /usr/local/lib/python3.6/dist-packages/droidconfig.py
+    - name: /usr/local/lib/{{ python3_version }}/dist-packages/droidconfig.py
     - pattern: '^BAKSMALI_JAR.*$'
     - repl: 'BAKSMALI_JAR = os.path.join(os.path.expanduser("/opt/baksmali"), "baksmali-2.4.0.jar")'
     - count: 1
@@ -52,7 +56,7 @@ mat-python3-packages-droidlysis-baksmali-cfg:
 
 mat-python3-packages-droidlysis-dex2jar-cfg:
   file.replace:
-    - name: /usr/local/lib/python3.6/dist-packages/droidconfig.py
+    - name: /usr/local/lib/{{ python3_version }}/dist-packages/droidconfig.py
     - pattern: '^DEX2JAR_CMD.*$'
     - repl: 'DEX2JAR_CMD = os.path.join(os.path.expanduser("/usr/bin"), "d2j-dex2jar")'
     - count: 1
@@ -62,11 +66,10 @@ mat-python3-packages-droidlysis-dex2jar-cfg:
 
 mat-python3-packages-droidlysis-procyon-cfg:
   file.replace:
-    - name: /usr/local/lib/python3.6/dist-packages/droidconfig.py
+    - name: /usr/local/lib/{{ python3_version }}/dist-packages/droidconfig.py
     - pattern: '^PROCYON_JAR.*$'
     - repl: 'PROCYON_JAR = os.path.join(os.path.expanduser("/usr/share/java"), "procyon-decompiler-0.5.32.jar")'
     - count: 1
     - prepend_if_not_found: False
     - require:
       - pip: mat-python3-packages-droidlysis
-
