@@ -13,3 +13,7 @@ gsettings set org.gnome.desktop.screensaver lock-enabled false
 #gsettings set org.gnome.desktop.background picture-uri 'file:///'
 #gsettings set org.gnome.desktop.background picture-options
 #gsettings set org.gnome.desktop.background primary-color <hex value>
+
+#Customization
+gsettings set net.launchpad.plank.dock.settings:/net.launchpad.plank.docks.dock1/ position 'left'
+gsettings set net.launchpad.plank.dock.settings:/net.launchpad.plank.docks.dock1/ theme 'Transparent'

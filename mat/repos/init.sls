@@ -6,6 +6,7 @@ include:
   - mat.repos.universe
   - mat.repos.nodejs
   - mat.repos.openjdk
+  - mat.repos.giuspen
   
 mat-repos:
   test.nop:
@@ -17,3 +18,4 @@ mat-repos:
       - sls: mat.repos.universe
       - sls: mat.repos.nodejs
       - sls: mat.repos.openjdk
+      - sls: mat.repos.giuspen

@@ -1,0 +1,2 @@
+xwayland:
+  pkg.removed

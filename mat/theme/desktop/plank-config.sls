@@ -10,6 +10,13 @@ include:
   - mat.config.user
   - mat.theme.desktop.ubuntu-budgie-desktop
 
+#mat-theme-desktop-plank-config-clean:
+#  file.directory:
+#    - name: {{ home }}/.config/plank/dock1/launchers/
+#    - clean: True
+#    - require:
+#      - user: mat-user-{{ user }}
+
 mat-theme-desktop-plank-config:
   file.recurse:
     - source: salt://mat/theme/desktop/plank
@@ -20,3 +27,4 @@ mat-theme-desktop-plank-config:
     - require:
       - user: mat-user-{{ user }}
       - sls: mat.theme.desktop.ubuntu-budgie-desktop
+

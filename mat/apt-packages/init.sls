@@ -22,7 +22,7 @@ include:
   - mat.apt-packages.libssl-dev
   - mat.apt-packages.libswt-gtk-4-java
   - mat.apt-packages.libtool
-  - mat.apt-packages.libusbmuxd4
+  - mat.apt-packages.libusbmuxd
   - mat.apt-packages.nodejs
   - mat.apt-packages.perl
   - mat.apt-packages.pkg-config
@@ -73,7 +73,7 @@ mat-apt-packages:
       - sls: mat.apt-packages.libssl-dev
       - sls: mat.apt-packages.libswt-gtk-4-java
       - sls: mat.apt-packages.libtool
-      - sls: mat.apt-packages.libusbmuxd4
+      - sls: mat.apt-packages.libusbmuxd
       - sls: mat.apt-packages.nodejs
       - sls: mat.apt-packages.perl
       - sls: mat.apt-packages.pkg-config

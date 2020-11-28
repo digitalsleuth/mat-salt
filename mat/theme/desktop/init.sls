@@ -5,6 +5,8 @@ include:
   - mat.theme.desktop.open-vm-tools-desktop
   - mat.theme.desktop.plank-config
   - mat.theme.desktop.applications
+  - mat.theme.desktop.xwayland
+  - mat.theme.desktop.gdm3
 
 mat-theme-desktop:
   test.nop:
@@ -15,3 +17,5 @@ mat-theme-desktop:
       - sls: mat.theme.desktop.open-vm-tools-desktop
       - sls: mat.theme.desktop.plank-config
       - sls: mat.theme.desktop.applications
+      - sls: mat.theme.desktop.xwayland
+      - sls: mat.theme.desktop.gdm3
