@@ -26,12 +26,13 @@ if [ $? -eq 0 ]; then
 fi
 
 STASH_RESULTS=`git stash -u`
+VERSION_FILE="mat/VERSION"
 
-if [ "`cat VERSION`" != "${TAG_NAME}" ]; then
+if [ "`cat ${VERSION_FILE}`" != "${TAG_NAME}" ]; then
   echo "==> Updating Release Version"
-  rm -f VERSION
-  echo "$TAG_NAME" > VERSION
-  git add VERSION
+  rm -f ${VERSION_FILE}
+  echo "$TAG_NAME" > ${VERSION_FILE}
+  git add ${VERSION_FILE}
   git commit -m "Updating VERSION to $TAG_NAME"
   git push origin master
 
@@ -55,10 +56,10 @@ echo "==> Generating SHA256 of tar.gz"
 shasum -a 256 /tmp/mat-salt-$TAG_NAME.tar.gz > /tmp/mat-salt-$TAG_NAME.tar.gz.sha256
 
 echo "==> Generating GPG Signature of SHA256"
-gpg --armor --clearsign --digest-algo SHA256 -u 28CD19DB /tmp/mat-salt-$TAG_NAME.tar.gz.sha256
+gpg --armor --clearsign --digest-algo SHA256 -u 4CF992E3 /tmp/mat-salt-$TAG_NAME.tar.gz.sha256
 
 echo "==> Generating GPG Signature of tar.gz file"
-gpg --armor --detach-sign -u 28CD19DB /tmp/mat-salt-$TAG_NAME.tar.gz
+gpg --armor --detach-sign -u 4CF992E3 /tmp/mat-salt-$TAG_NAME.tar.gz
 
 echo "==> Uploading mat-salt-$TAG_NAME.tar.gz.sha256"
 curl -XPOST -H "Authorization: token ${GITHUB_ACCESS_TOKEN}" -H "Content-Type: text/plain" -q "https://uploads.github.com/repos/digitalsleuth/mat-salt/releases/${RELEASE_ID}/assets?name=mat-salt-${TAG_NAME}.tar.gz.sha256" --data-binary @/tmp/mat-salt-$TAG_NAME.tar.gz.sha256
