@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=ileappGUI
+Exec=ileappGUI
+Categories=iOS;
+Comment=GUI for iOS Logs, Events, and Plist Parser
+

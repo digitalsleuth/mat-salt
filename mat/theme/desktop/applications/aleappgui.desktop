@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=aleappGUI
+Exec=aleappGUI
+Categories=Android;
+Comment=GUI for Android Logs, Events, and Protobuf Parser
+

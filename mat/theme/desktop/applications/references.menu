@@ -1,0 +1,13 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+ "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>References</Name>
+    <Directory>References.directory</Directory>
+    <Include>
+        <Category>References</Category>
+    </Include>
+  </Menu> <!-- End References -->
+</Menu>
+
