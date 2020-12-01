@@ -13,4 +13,4 @@ For the time being, if you're looking to install these manually, you can run the
 
 `sudo salt-call -l debug --local --retcode-passthrough --state-output=mixed state.sls mat.(dedicated|addon) pillar='{"mat_user": "<username>"}'`
 
-Where (dedicated|addon) is a choice between the two options, and <username> is the user for which you'd like the states/environment configured.
+Where (dedicated|addon) is a choice between the two options, and `<username>` is the user for which you'd like the states/environment configured.
