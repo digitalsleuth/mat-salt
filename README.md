@@ -1,7 +1,7 @@
-# mat-salt
+# MAT - Mobile Analysis Toolkit
 MAT Salt States
 
-This is MAT, the Mobile Analysis Toolkit. 
+This is the backbone of MAT, the Mobile Analysis Toolkit. 
 
 This repo contains state files for use with SaltStack, which will allow you to install the tools using salt-call.
 The purpose of these states is to install several forensic applications for conducting Mobile Forensics.
