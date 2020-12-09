@@ -12,7 +12,7 @@ include:
 mat-addon-version-file:
   file.managed:
     - name: /etc/mat-version
-    - source: salt://VERSION
+    - source: salt://mat/VERSION
     - user: root
     - group: root
     - require:

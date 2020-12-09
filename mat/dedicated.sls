@@ -2,12 +2,8 @@ include:
     - mat.addon
     - mat.theme
 
-mat-dedicated-version-file:
-  file.managed:
-    - name: /etc/mat-version
-    - source: salt://VERSION
-    - user: root
-    - group: root
+mat-dedicated:
+  test.nop:
     - require:
       - sls: mat.addon
       - sls: mat.theme
