@@ -29,16 +29,59 @@ mat-theme-desktop-applications-config-autostart:
       - user: mat-user-{{ user }}
       - file: mat-theme-desktop-applications-config
 
-mat-theme-desktop-applications-cyberchef:
-  file.managed:
-    - replace: False
-    - name: /usr/share/applications/cyberchef.desktop
-    - source: salt://mat/theme/desktop/applications/cyberchef.desktop
-    - makedirs: True
-    - watch:
-      - file: mat-theme-desktop-applications-config-autostart
+mat-theme-desktop-applications-autostart-tilix:
+  file.copy:
+    - name: {{ home }}/.config/autostart/com.gexperts.Tilix.desktop
+    - source: /usr/share/applications/com.gexperts.Tilix.desktop
     - require:
-      - sls: mat.tools.cyberchef
+      - user: mat-user-{{ user }}
+
+mat-theme-desktop-applications-merged-dir:
+  file.directory:
+    - name: /etc/xdg/menus/applications-merged
+    - user: root
+    - group: root
+    - dir_mode: 755
+    - file_mode: 644
+    - recurse:
+      - user
+      - group
+      - mode
+    - watch:
+      - file: mat-theme-desktop-applications-autostart-tilix
+
+mat-theme-desktop-applications-menus:
+  file.recurse:
+    - name: /etc/xdg/menus/applications-merged/
+    - source: salt://mat/theme/desktop/applications/
+    - include_pat: '*.menu'
+    - user: root
+    - group: root
+    - file_mode: 644
+    - require:
+      - file: mat-theme-desktop-applications-merged-dir
+
+mat-theme-desktop-applications-directories:
+  file.recurse:
+    - name: /usr/share/desktop-directories/
+    - source: salt://mat/theme/desktop/applications/
+    - include_pat: '*.directory'
+    - user: root
+    - group: root
+    - file_mode: 644
+    - require:
+      - file: mat-theme-desktop-applications-menus
+
+mat-theme-desktop-applications-desktop-files:
+  file.recurse:
+    - name: /usr/share/applications/
+    - source: salt://mat/theme/desktop/applications/
+    - include_path: '*.desktop'
+    - user: root
+    - group: root
+    - file_mode: 644
+    - require:
+      - file: mat-theme-desktop-applications-directories
 
 mat-theme-desktop-applications-cyberchef-icon:
   file.managed:
@@ -47,13 +90,6 @@ mat-theme-desktop-applications-cyberchef-icon:
     - source: salt://mat/theme/desktop/applications/cyberchef.png
     - makedirs: True
     - watch:
-      - file: mat-theme-desktop-applications-cyberchef
+      - file: mat-theme-desktop-applications-desktop-files
     - require:
       - sls: mat.tools.cyberchef
-
-mat-theme-desktop-applications-autostart-tilix:
-  file.copy:
-    - name: {{ home }}/.config/autostart/com.gexperts.Tilix.desktop
-    - source: /usr/share/applications/com.gexperts.Tilix.desktop
-    - require:
-      - user: mat-user-{{ user }}
