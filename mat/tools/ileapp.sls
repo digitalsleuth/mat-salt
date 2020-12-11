@@ -10,6 +10,16 @@ mat-tools-ileapp-source:
     - require:
       - sls: mat.apt-packages.git
 
+mat-tools-ileapp-requirements-mod:
+  file.replace:
+    - name: /usr/local/src/ileapp/requirements.txt
+    - pattern: "pyinstaller\n"
+    - repl: "pyinstaller==3.6\n"
+    - count: 1
+    - prepend_if_not_found: False
+    - require:
+      - git: mat-tools-ileapp-source
+
 mat-tools-ileapp-requirements:
   pip.installed:
     - requirements: /usr/local/src/ileapp/requirements.txt
@@ -17,6 +27,7 @@ mat-tools-ileapp-requirements:
     - require:
       - sls: mat.apt-packages.python3-pip
       - sls: mat.apt-packages.python3-tk
+      - file: mat-tools-ileapp-requirements-mod
 
 mat-tools-ileapp-py-shebang:
   file.prepend:
