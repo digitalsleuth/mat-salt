@@ -7,6 +7,7 @@ include:
   - mat.scripts.frida-ipa-dump
   - mat.scripts.ios-sysdiagnose
   - mat.scripts.itunes_backup2hashcat
+  - mat.scripts.kobackupdec
   - mat.scripts.koodous-scripts
   - mat.scripts.pidcat
   - mat.scripts.sqlite-miner
@@ -22,6 +23,7 @@ mat-scripts:
       - sls: mat.scripts.frida-ipa-dump
       - sls: mat.scripts.ios-sysdiagnose
       - sls: mat.scripts.itunes_backup2hashcat
+      - sls: mat.scripts.kobackupdec
       - sls: mat.scripts.koodous-scripts
       - sls: mat.scripts.pidcat
       - sls: mat.scripts.sqlite-miner

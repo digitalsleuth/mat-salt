@@ -1,9 +1,9 @@
 include:
   - mat.apt-packages.python3-pip
 
-simplekml:
+mat-python3-packages-construct:
   pip.installed:
+    - name: construct
     - bin_env: /usr/bin/python3
-    - upgrade: False
     - require:
       - sls: mat.apt-packages.python3-pip

@@ -21,6 +21,6 @@ mat-python3-packages-smalisca-install:
   pip.installed:
     - name: smalisca
     - bin_env: /usr/bin/python3
-    - upgrade: True
+    - upgrade: False
     - require:
       - sls: mat.apt-packages.python3-pip

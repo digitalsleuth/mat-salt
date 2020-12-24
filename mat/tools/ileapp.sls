@@ -20,6 +20,11 @@ mat-tools-ileapp-requirements-mod:
     - require:
       - git: mat-tools-ileapp-source
 
+mat-tools-ileapp-remove-enum34:
+  pip.removed:
+    - name: enum34
+    - bin_env: /usr/bin/python3
+
 mat-tools-ileapp-requirements:
   pip.installed:
     - requirements: /usr/local/src/ileapp/requirements.txt
