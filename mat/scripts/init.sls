@@ -5,6 +5,7 @@ include:
   - mat.scripts.dnschef
   - mat.scripts.frida-ios-dump
   - mat.scripts.frida-ipa-dump
+  - mat.scripts.ios-sms-parser
   - mat.scripts.ios-sysdiagnose
   - mat.scripts.itunes_backup2hashcat
   - mat.scripts.kobackupdec
@@ -21,6 +22,7 @@ mat-scripts:
       - sls: mat.scripts.dnschef
       - sls: mat.scripts.frida-ios-dump
       - sls: mat.scripts.frida-ipa-dump
+      - sls: mat.scripts.ios-sms-parser
       - sls: mat.scripts.ios-sysdiagnose
       - sls: mat.scripts.itunes_backup2hashcat
       - sls: mat.scripts.kobackupdec

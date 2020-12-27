@@ -7,6 +7,7 @@ include:
   - mat.theme.desktop.applications
   - mat.theme.desktop.xwayland
   - mat.theme.desktop.gdm3
+  - mat.theme.desktop.mat-logo
 
 mat-theme-desktop:
   test.nop:
@@ -19,3 +20,4 @@ mat-theme-desktop:
       - sls: mat.theme.desktop.applications
       - sls: mat.theme.desktop.xwayland
       - sls: mat.theme.desktop.gdm3
+      - sls: mat.theme.desktop.mat-logo

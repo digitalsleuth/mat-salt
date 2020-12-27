@@ -10,9 +10,9 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'no
 gsettings set org.gnome.desktop.screensaver lock-enabled 'false'
 
 #Setup color/font scheme
-#gsettings set org.gnome.desktop.background picture-uri 'file:///'
-#gsettings set org.gnome.desktop.background picture-options
-#gsettings set org.gnome.desktop.background primary-color <hex value>
+gsettings set org.gnome.desktop.background picture-uri 'file:///usr/local/share/mat/mat-logo.png'
+gsettings set org.gnome.desktop.background picture-options "centered"
+gsettings set org.gnome.desktop.background primary-color "#1644b9"
 
 #Customization
 gsettings set net.launchpad.plank.dock.settings:/net.launchpad.plank.docks.dock1/ position 'left'

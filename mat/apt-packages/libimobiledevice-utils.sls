@@ -1,0 +1,2 @@
+libimobiledevice-utils:
+  pkg.installed

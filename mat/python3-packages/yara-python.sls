@@ -8,6 +8,7 @@
 
 include:
   - mat.apt-packages.python3-pip
+  - mat.python3-packages.wheel
 
 yara-python:
   pip.installed:
@@ -15,3 +16,4 @@ yara-python:
     - upgrade: True
     - require:
       - sls: mat.apt-packages.python3-pip
+      - sls: mat.python3-packages.wheel

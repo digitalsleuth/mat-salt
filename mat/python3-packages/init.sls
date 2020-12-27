@@ -11,6 +11,7 @@ include:
   - mat.python3-packages.frida
   - mat.python3-packages.googleplay-api
   - mat.python3-packages.objection
+  - mat.python3-packages.protobuf-inspector
   - mat.python3-packages.pycryptodome
   - mat.python3-packages.pyperclip
   - mat.python3-packages.qark
@@ -33,6 +34,7 @@ mat-python3-packages:
       - sls: mat.python3-packages.frida
       - sls: mat.python3-packages.googleplay-api
       - sls: mat.python3-packages.objection
+      - sls: mat.python3-packages.protobuf-inspector
       - sls: mat.python3-packages.pycryptodome
       - sls: mat.python3-packages.pyperclip
       - sls: mat.python3-packages.qark

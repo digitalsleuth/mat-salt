@@ -15,6 +15,7 @@ include:
   - mat.apt-packages.ideviceinstaller
   - mat.apt-packages.ifuse
   - mat.apt-packages.libimobiledevice6
+  - mat.apt-packages.libimobiledevice-utils
   - mat.apt-packages.libjansson-dev
   - mat.apt-packages.libmagic-dev
   - mat.apt-packages.libplist3
@@ -36,6 +37,7 @@ include:
   - mat.apt-packages.python3-tk
   - mat.apt-packages.radare2
   - mat.apt-packages.ruby-full
+  - mat.apt-packages.scrcpy
   - mat.apt-packages.sleuthkit
   - mat.apt-packages.software-properties-common
   - mat.apt-packages.sqlite3
@@ -66,6 +68,7 @@ mat-apt-packages:
       - sls: mat.apt-packages.ideviceinstaller
       - sls: mat.apt-packages.ifuse
       - sls: mat.apt-packages.libimobiledevice6
+      - sls: mat.apt-packages.libimobiledevice-utils
       - sls: mat.apt-packages.libjansson-dev
       - sls: mat.apt-packages.libmagic-dev
       - sls: mat.apt-packages.libplist3
@@ -87,6 +90,7 @@ mat-apt-packages:
       - sls: mat.apt-packages.python3-tk
       - sls: mat.apt-packages.radare2
       - sls: mat.apt-packages.ruby-full
+      - sls: mat.apt-packages.scrcpy
       - sls: mat.apt-packages.sleuthkit
       - sls: mat.apt-packages.software-properties-common
       - sls: mat.apt-packages.sqlite3
