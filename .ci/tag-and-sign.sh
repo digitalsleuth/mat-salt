@@ -42,7 +42,7 @@ if [ "`cat ${VERSION_FILE}`" != "${TAG_NAME}" ]; then
   echo "==> Pushing Tags to Remote"
   git push origin --tags
 
-  echo "==> Sleeping, waiting for tag.gz file"
+  echo "==> Sleeping, waiting for tar.gz file"
   sleep 3
 fi
 
