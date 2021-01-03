@@ -25,6 +25,7 @@ include:
   - mat.apt-packages.libtool
   - mat.apt-packages.libusbmuxd
   - mat.apt-packages.nodejs
+  - mat.apt-packages.openssh
   - mat.apt-packages.perl
   - mat.apt-packages.pkg-config
   - mat.apt-packages.procyon-decompiler
@@ -81,6 +82,7 @@ mat-apt-packages:
       - sls: mat.apt-packages.libtool
       - sls: mat.apt-packages.libusbmuxd
       - sls: mat.apt-packages.nodejs
+      - sls: mat.apt-packages.openssh
       - sls: mat.apt-packages.perl
       - sls: mat.apt-packages.pkg-config
       - sls: mat.apt-packages.procyon-decompiler

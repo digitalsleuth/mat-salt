@@ -4,5 +4,5 @@ set -x
 
 DISTRO=$1
 STATE=$2
-docker run -it --rm --name="mat-state-${STATE}" -v `pwd`/mat:/srv/salt/mat -p 8080:8080 --cap-add SYS_ADMIN digitalsleuth/mat-salt-tester:${DISTRO} \
+docker run -it --rm --name="mat-state-${STATE}" -v `pwd`/mat:/srv/salt/mat -p 8181:8181 --cap-add SYS_ADMIN digitalsleuth/mat-salt-tester:${DISTRO} \
   /bin/bash
