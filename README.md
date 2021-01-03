@@ -6,10 +6,10 @@ This is the backbone of MAT, the Mobile Analysis Toolkit.
 This repo contains state files for use with SaltStack, which will allow you to install the tools using salt-call.
 The purpose of these states is to install several forensic applications for conducting Mobile Forensics.
 
-A CLI will soon follow, allowing these states to be installed automatically. These states are configured for use with
+The CLI can be found at https://github.com/digitalsleuth/mat-cli and will allow these states to be installed automatically. These states are configured for use with
 salt-minion 3001.
 
-For the time being, if you're looking to install these manually, you can run the following:
+However, if you're looking to install these manually, you can run the following:
 
 `sudo salt-call -l debug --local --retcode-passthrough --state-output=mixed state.sls mat.(dedicated|addon) pillar='{"mat_user": "<username>"}'`
 
