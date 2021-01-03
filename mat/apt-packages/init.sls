@@ -35,6 +35,8 @@ include:
   - mat.apt-packages.python3-pip
   - mat.apt-packages.python3-pyqt5
   - mat.apt-packages.python3-tk
+  - mat.apt-packages.python3-venv
+  - mat.apt-packages.python3-virtualenv
   - mat.apt-packages.radare2
   - mat.apt-packages.ruby-full
   - mat.apt-packages.scrcpy
@@ -46,6 +48,7 @@ include:
   - mat.apt-packages.super-analyzer
   - mat.apt-packages.unzip
   - mat.apt-packages.usbmuxd
+  - mat.apt-packages.virtualenv
   - mat.apt-packages.wireshark
   - mat.apt-packages.xdg-utils
 
@@ -88,6 +91,8 @@ mat-apt-packages:
       - sls: mat.apt-packages.python3-pip
       - sls: mat.apt-packages.python3-pyqt5
       - sls: mat.apt-packages.python3-tk
+      - sls: mat.apt-packages.python3-venv
+      - sls: mat.apt-packages.python3-virtualenv
       - sls: mat.apt-packages.radare2
       - sls: mat.apt-packages.ruby-full
       - sls: mat.apt-packages.scrcpy
@@ -99,5 +104,6 @@ mat-apt-packages:
       - sls: mat.apt-packages.super-analyzer
       - sls: mat.apt-packages.unzip
       - sls: mat.apt-packages.usbmuxd
+      - sls: mat.apt-packages.virtualenv
       - sls: mat.apt-packages.wireshark
       - sls: mat.apt-packages.xdg-utils

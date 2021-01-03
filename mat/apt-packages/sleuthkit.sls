@@ -3,6 +3,14 @@
 {%- set filename = "sleuthkit-4.10.1.tar.gz" -%}
 {%- set hash = "65c3f701f046f012feba78452a50f1307948a1038474eaf8e296f65031604a0a" -%}
 
+# Name: SleuthKit
+# Website: https://www.sleuthkit.org/sleuthkit
+# Description: Analyze disk images and recover artifacts
+# Category:
+# Author: Brian Carrier and others
+# License: IBM Public License, Common Public License, GNU General Public License (GPL) v2 (https://www.sleuthkit.org/sleuthkit/licenses.php)
+# Notes: For a listing of commands, see http://wiki.sleuthkit.org/index.php?title=TSK_Tool_Overview
+
 include:
   - mat.repos.gift
   - mat.apt-packages.libewf-dev

@@ -3,8 +3,8 @@
 # Description:
 # Category:
 # Author: MWI InfoSecurity
-# License: https://github.com/FSecureLABS/drozer/blob/develop/LICENSE
-# Notes: 
+# License: Copyright MWR InfoSecurity, Apache 2.0 (https://github.com/FSecureLABS/drozer/blob/develop/LICENSE)
+# Notes: drozer, requires drozer agent (https://github.com/FSecureLABS/drozer/releases/download/2.3.4/drozer-agent-2.3.4.apk)
 
 include:
   - mat.apt-packages.python2-pip

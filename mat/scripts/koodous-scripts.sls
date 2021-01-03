@@ -1,4 +1,11 @@
 {%- set move_scripts = ["compare_apks.py","cromosome.py","feed.py","feed.sh","new_detections.py","pykoodous.py","scan_device.py","search.py","unpack_apk.py"] -%}
+# Name:
+# Website:
+# Description: 
+# Category: 
+# Author: 
+# License: 
+# Notes: 
 
 include:
   - mat.apt-packages.git

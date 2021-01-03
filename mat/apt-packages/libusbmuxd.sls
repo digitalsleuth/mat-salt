@@ -1,3 +1,11 @@
+# Name: 
+# Website: 
+# Description:
+# Category:
+# Author: 
+# License: 
+# Notes: 
+
 {% if grains['oscodename'] == "bionic" %}
 
 libusbmuxd4:

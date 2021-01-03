@@ -1,3 +1,11 @@
+# Name: 
+# Website: 
+# Description:
+# Category:
+# Author: 
+# License: 
+# Notes: 
+
 # Not set for install - needs fixes and requirements first
 
 {% set filename="AndroidProjectCreator-1.4-stable-jar-with-dependencies.jar" %}

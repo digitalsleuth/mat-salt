@@ -1,3 +1,11 @@
+# Name: 
+# Website: 
+# Description:
+# Category:
+# Author: 
+# License: 
+# Notes: 
+
 include:
   - mat.apt-packages.python3
   - mat.python3-packages.frida

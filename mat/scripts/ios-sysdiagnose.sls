@@ -1,3 +1,11 @@
+# Name: 
+# Website: 
+# Description:
+# Category:
+# Author: 
+# License: 
+# Notes: 
+
 {% set files = ['sysdiagnose-appconduit.py','sysdiagnose-appupdates.py','sysdiagnose-mobileactivation.py','sysdiagnose-mobilebackup.py','sysdiagnose-mobilecontainermanager.py','sysdiagnose-net-ext-cache.py','sysdiagnose-networkinterfaces.py','sysdiagnose-networkprefs.py','sysdiagnose-sys.py','sysdiagnose-uuid2path.py','sysdiagnose-wifi-icloud.py','sysdiagnose-wifi-kml.py','sysdiagnose-wifi-net.py','sysdiagnose-wifi-plist.py'] %}
 
 include:

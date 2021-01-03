@@ -1,6 +1,13 @@
+# Name: 
+# Website: 
+# Description:
+# Category:
+# Author: 
+# License: 
+# Notes: 
+
 include:
   - mat.apt-packages.python3-pip
-  - mat.apt-packages.python2-pip
 
 mat-python3-packages-pyperclip:
   pip.installed:

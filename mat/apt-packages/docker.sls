@@ -3,7 +3,7 @@
 # Description: 
 # Category: 
 # Author: Docker Inc
-# License: Apache License 2.0: https://github.com/moby/moby/blob/master/LICENSE
+# License: Apache License 2.0 (https://github.com/moby/moby/blob/master/LICENSE)
 # Notes: 
 
 include:

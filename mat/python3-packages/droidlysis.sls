@@ -3,8 +3,13 @@
 # Description: Property extractor for Android apps
 # Category:
 # Author: cryptax
-# License: MIT License: https://github.com/cryptax/droidlysis/blob/master/LICENSE
+# License: MIT License (https://github.com/cryptax/droidlysis/blob/master/LICENSE)
 # Notes: droidlysis
+
+{% set apktool="apktool_2.4.1.jar" %}
+{% set baksmali="baksmali-2.4.0.jar" %}
+{% set procyon="procyon-decompiler-0.5.32.jar" %}
+
 {% if grains['oscodename'] == "bionic" %}
   {% set python3_version="python3.6" %}
 {% elif grains['oscodename'] == "focal" %}

@@ -1,3 +1,11 @@
+# Name: 
+# Website: 
+# Description:
+# Category:
+# Author: 
+# License: 
+# Notes: 
+
 include:
   - mat.apt-packages.default-jdk
   - mat.apt-packages.libswt-gtk-4-java

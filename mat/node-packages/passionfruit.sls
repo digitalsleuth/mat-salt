@@ -4,7 +4,7 @@
 # Category:
 # Author: 
 # License: 
-# Notes: 
+# Notes: Being deprecated in favor of Grapefruit (current WIP)
 
 include:
   - mat.apt-packages.nodejs

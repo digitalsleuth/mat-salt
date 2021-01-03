@@ -2,7 +2,7 @@ include:
   - mat.python3-packages.wheel
   - mat.python3-packages.androguard
   - mat.python3-packages.androwarn
-  #- mat.python3-packages.apkid
+  - mat.python3-packages.apkid
   - mat.python3-packages.axmlparserpy
   - mat.python3-packages.chepy
   - mat.python3-packages.construct
@@ -25,7 +25,7 @@ mat-python3-packages:
       - sls: mat.python3-packages.wheel
       - sls: mat.python3-packages.androguard
       - sls: mat.python3-packages.androwarn
-      #- sls: mat.python3-packages.apkid
+      - sls: mat.python3-packages.apkid
       - sls: mat.python3-packages.axmlparserpy
       - sls: mat.python3-packages.chepy
       - sls: mat.python3-packages.construct

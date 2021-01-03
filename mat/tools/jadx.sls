@@ -3,7 +3,7 @@
 # Description: Generate Java source code from Dalvik Executable (dex) and Android APK files
 # Category: 
 # Author: Skylot
-# License: Apache License 2.0: https://github.com/skylot/jadx/blob/master/LICENSE, also see https://github.com/skylot/jadx/blob/master/NOTICE
+# License: Apache License 2.0: (https://github.com/skylot/jadx/blob/master/LICENSE) (https://github.com/skylot/jadx/blob/master/NOTICE)
 # Notes: jadx, jadx-gui
 
 include:

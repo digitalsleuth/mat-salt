@@ -1,3 +1,11 @@
+# Name: 
+# Website: 
+# Description:
+# Category:
+# Author: 
+# License: 
+# Notes: 
+
 include:
   - mat.apt-packages.libatomic1
   - mat.apt-packages.libgtk2

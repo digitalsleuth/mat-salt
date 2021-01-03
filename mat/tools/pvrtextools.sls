@@ -1,3 +1,11 @@
+# Name: 
+# Website: 
+# Description:
+# Category:
+# Author: 
+# License: 
+# Notes: 
+
 {% set filename="PVRTexToolSetup-2020_R1.run-x64" %}
 
 include:

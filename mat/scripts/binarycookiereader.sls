@@ -1,3 +1,11 @@
+# Name: 
+# Website: 
+# Description:
+# Category:
+# Author: 
+# License: 
+# Notes: 
+
 mat-scripts-binarycookiereader:
   file.managed:
     - name: /usr/local/bin/binarycookiereader.py

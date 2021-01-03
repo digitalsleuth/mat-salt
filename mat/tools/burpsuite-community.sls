@@ -3,7 +3,7 @@
 # Description: Intercept web interactions via proxy
 # Category: 
 # Author: PortSwigger
-# License: Free, custom license: https://portswigger.net/burp/tc-community
+# License: Free, custom license (https://portswigger.net/burp/tc-community)
 # Notes: burpsuite
 
 include:

@@ -1,4 +1,10 @@
-# scrcpy is not available on bionic, but it can be built. 
+# Name: 
+# Website: 
+# Description:
+# Category:
+# Author: 
+# License: 
+# Notes: scrcpy is not available on bionic, but it can be built. 
 
 {% if grains['oscodename'] == "focal" %} 
 
