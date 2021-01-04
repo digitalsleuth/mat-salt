@@ -1,5 +1,6 @@
 include:
   - mat.python3-packages.wheel
+  - mat.python3-packages.adb-shell
   - mat.python3-packages.androguard
   - mat.python3-packages.androwarn
   - mat.python3-packages.apkid
@@ -23,6 +24,7 @@ mat-python3-packages:
   test.nop:
     - require:
       - sls: mat.python3-packages.wheel
+      - sls: mat.python3-packages.adb-shell
       - sls: mat.python3-packages.androguard
       - sls: mat.python3-packages.androwarn
       - sls: mat.python3-packages.apkid

@@ -4,7 +4,7 @@ include:
 
 mat-python3-packages-upgrade:
   cmd.run:
-    - name: python3 -m pip install --upgrade chepy chepy[extras]
+    - name: python3 -m pip install --upgrade chepy chepy[extras] adb-shell adb-shell[usb]
 
 mat-python3-packages-upgrade-apkid:
   cmd.run:
