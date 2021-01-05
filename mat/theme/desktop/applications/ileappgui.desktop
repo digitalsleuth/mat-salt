@@ -2,6 +2,7 @@
 Type=Application
 Name=ileappGUI
 Exec=ileappGUI
+Icon=ileapp
 Categories=iOS;
 Comment=GUI for iOS Logs, Events, and Plist Parser
 

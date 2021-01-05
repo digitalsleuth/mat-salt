@@ -22,6 +22,8 @@ mat-theme-cleanup-extra-apps:
       - rhythmbox
       - gnome-sudoku
       - unattended-upgrades
+      - transmission-gtk
+      - gnome-2048
 
 mat-theme-cleanup-disable-auto-upgrades:
   file.append:

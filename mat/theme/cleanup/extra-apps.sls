@@ -4,7 +4,6 @@ mat-theme-cleanup-extra-apps:
       - aisleriot
       - transmission
       - transmission-common
-      - transmission-gtk
       - caffeine
       - cheese
       - cheese-common
@@ -14,3 +13,5 @@ mat-theme-cleanup-extra-apps:
       - gnome-mines
       - rhythmbox
       - gnome-sudoku
+      - gnome-2048
+      - transmission-gtk

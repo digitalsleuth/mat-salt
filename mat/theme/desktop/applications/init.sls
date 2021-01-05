@@ -9,6 +9,7 @@
 include:
   - mat.config.user
   - mat.tools.cyberchef
+  - mat.tools.jadx
 
 mat-theme-desktop-applications-config:
   file.managed:
@@ -76,20 +77,23 @@ mat-theme-desktop-applications-desktop-files:
   file.recurse:
     - name: /usr/share/applications/
     - source: salt://mat/theme/desktop/applications/
-    - include_path: '*.desktop'
+    - include_pat: '*.desktop'
     - user: root
     - group: root
     - file_mode: 644
     - require:
       - file: mat-theme-desktop-applications-directories
 
-mat-theme-desktop-applications-cyberchef-icon:
-  file.managed:
-    - replace: False
-    - name: /usr/share/icons/cyberchef.png
-    - source: salt://mat/theme/desktop/applications/cyberchef.png
-    - makedirs: True
+mat-theme-desktop-applications-icons:
+  file.recurse:
+    - name: /usr/share/icons/
+    - source: salt://mat/theme/desktop/applications/
+    - include_pat: '*.png'
+    - user: root
+    - group: root
+    - file_mode: 644
     - watch:
       - file: mat-theme-desktop-applications-desktop-files
     - require:
       - sls: mat.tools.cyberchef
+      - sls: mat.tools.jadx

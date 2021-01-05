@@ -1,0 +1,9 @@
+[Desktop Entry]
+Comment=Java Decompiler JAD-X GUI
+Terminal=false
+Name=JADX-GUI
+Exec=/usr/local/bin/jadx-gui
+Type=Application
+Icon=jadx-logo-48px
+MimeType=application/java;application/java-vm;application/java-archive
+Categories=Analysis;

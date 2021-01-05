@@ -2,6 +2,7 @@
 Type=Application
 Name=aleappGUI
 Exec=aleappGUI
+Icon=aleapp
 Categories=Android;
 Comment=GUI for Android Logs, Events, and Protobuf Parser
 

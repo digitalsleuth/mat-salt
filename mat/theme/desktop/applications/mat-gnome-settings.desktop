@@ -2,3 +2,5 @@
 Type=Application
 Name=mat-gnome-settings
 Exec=/usr/local/share/mat/mat-gnome-settings.sh
+Icon=mat-icon64px
+Categories=System;
