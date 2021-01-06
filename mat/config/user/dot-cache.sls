@@ -6,7 +6,7 @@
 include:
   - mat.config.user
 
-mat-dot-cache-permissions:
+mat-dot-cache-directory:
   file.directory:
     - name: {{ home }}/.cache
     - user: {{ user }}

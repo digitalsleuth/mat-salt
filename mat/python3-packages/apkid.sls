@@ -6,8 +6,6 @@
 # License: 
 # Notes: 
 
-#This will require a virtualenv, as it requires a dex-built version of 3.11.0 yara-python
-
 include:
   - mat.apt-packages.python3-pip
   - mat.apt-packages.git

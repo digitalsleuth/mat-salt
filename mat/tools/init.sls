@@ -9,6 +9,7 @@ include:
   - mat.tools.axmlprinter2
   - mat.tools.burpsuite-community
   - mat.tools.bytecode-viewer
+  - mat.tools.cfr
   - mat.tools.classyshark
   - mat.tools.cutter
   - mat.tools.cyberchef
@@ -41,6 +42,7 @@ mat-tools:
       - sls: mat.tools.axmlprinter2
       - sls: mat.tools.burpsuite-community
       - sls: mat.tools.bytecode-viewer
+      - sls: mat.tools.cfr
       - sls: mat.tools.classyshark
       - sls: mat.tools.cutter
       - sls: mat.tools.cyberchef

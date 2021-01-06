@@ -1,5 +1,6 @@
 include:
   - mat.apt-packages.android-tools-adb
+  - mat.apt-packages.android-project-creator
   - mat.apt-packages.automake
   - mat.apt-packages.baksmali
   - mat.apt-packages.bison
@@ -57,6 +58,7 @@ mat-apt-packages:
   test.nop:
     - require:
       - sls: mat.apt-packages.android-tools-adb
+      - sls: mat.apt-packages.android-project-creator
       - sls: mat.apt-packages.automake
       - sls: mat.apt-packages.baksmali
       - sls: mat.apt-packages.bison

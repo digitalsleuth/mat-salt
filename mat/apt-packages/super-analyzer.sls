@@ -1,13 +1,10 @@
 # Name: super-android-analyzer
 # Website: https://github.com/SUPERAndroidAnalyzer/super
-# Description: 
+# Description: Vulnerability assessment tool for Android Applications
 # Category: 
-# Author: 
-# License: 
-# Notes: 
-
-include:
-  - mat.apt-packages.git
+# Author: Iban Equia (https://medium.com/@Razican)
+# License: GNU General Public License v3.0 (https://github.com/SUPERAndroidAnalyzer/super/blob/master/LICENSE)
+# Notes: super-analyzer
 
 mat-apt-packages-super-analyzer:
   file.managed:
@@ -21,5 +18,9 @@ mat-apt-packages-super-analyzer-installed:
       - super-analyzer: /usr/local/src/super-analyzer_0.5.1_debian_amd64.deb
     - watch:
       - file: mat-apt-packages-super-analyzer
-    - require:
-      - sls: mat.apt-packages.git
+
+mat-apt-packages-super-analyzer-cleanup:
+  file.absent:
+    - name: /usr/local/src/super-analyzer_0.5.1_debian_amd64.deb
+    - watch:
+      - pkg: mat-apt-packages-super-analyzer-installed

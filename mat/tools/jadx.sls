@@ -1,3 +1,5 @@
+{% set prev_version="jadx-1.1.0.zip" %}
+{% set curr_version="jadx-1.2.0.zip" %} 
 # Name: JADX
 # Website: https://github.com/skylot/jadx
 # Description: Generate Java source code from Dalvik Executable (dex) and Android APK files
@@ -11,9 +13,9 @@ include:
 
 mat-tools-jadx-source:
   file.managed:
-    - name: /usr/local/src/mat/files/jadx-1.1.0.zip
-    - source: https://github.com/skylot/jadx/releases/download/v1.1.0/jadx-1.1.0.zip
-    - source_hash: sha256=91948067a60feee36512e043b288f726678ddd760aa11a01496b53df95465b16
+    - name: /usr/local/src/mat/files/{{ curr_version }}
+    - source: https://github.com/skylot/jadx/releases/download/v1.2.0/{{ curr_version }}
+    - source_hash: sha256=e6ae92be16edae2098b1a9951533feba4278bb18f00fbab54eb23a427b98d425
     - makedirs: true
     - require:
       - sls: mat.apt-packages.default-jdk
@@ -21,7 +23,7 @@ mat-tools-jadx-source:
 mat-tools-jadx-archive:
   archive.extracted:
     - name: /usr/local/jadx
-    - source: /usr/local/src/mat/files/jadx-1.1.0.zip
+    - source: /usr/local/src/mat/files/{{ curr_version }}
     - enforce_toplevel: false
     - watch:
       - file: mat-tools-jadx-source
@@ -41,3 +43,9 @@ mat-tools-jadx-link2:
     - mode: 755
     - watch:
       - archive: mat-tools-jadx-archive
+
+mat-tools-jadx-upgrade-cleanup:
+  file.absent:
+    - name: /usr/local/src/mat/files/{{ prev_version }}
+    - watch:
+      - file: mat-tools-jadx-link2

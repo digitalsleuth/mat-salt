@@ -1,3 +1,6 @@
+{% set prev_version="None" %}
+{% set curr_version="v4.0.2.zip" %}
+
 # Name: 
 # Website:
 # Description: 
@@ -20,15 +23,15 @@ include:
 
 mat-tools-yara-source:
   file.managed:
-    - name: /usr/local/src/mat/files/v4.0.2.zip
-    - source: https://github.com/VirusTotal/yara/archive/v4.0.2.zip
+    - name: /usr/local/src/mat/files/{{ curr_version }}
+    - source: https://github.com/VirusTotal/yara/archive/{{ curr_version }}
     - source_hash: sha256=d4a45e36b9a4bf39f2f5c4cefdb0345d161cd69a5ced7000a825b5e100f242cd
     - makedirs: True
 
 mat-tools-yara-archive:
   archive.extracted:
     - name: /usr/local/src/
-    - source: /usr/local/src/mat/files/v4.0.2.zip
+    - source: /usr/local/src/mat/files/{{ curr_version }}
     - enforce_toplevel: true
     - watch:
       - file: mat-tools-yara-source
@@ -83,3 +86,9 @@ mat-tools-yara-cleanup:
     - name: /usr/local/src/yara-4.0.2
     - watch:
       - cmd: mat-tools-yara-build
+
+mat-tools-yara-upgrade-cleanup:
+  file.absent:
+    - name: /usr/local/src/mat/files/{{ prev_version }}
+    - watch:
+      - file: mat-tools-yara-cleanup

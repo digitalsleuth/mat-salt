@@ -9,6 +9,7 @@
 
 include:
   - mat.apt-packages.docker
+  - mat.config.user
 
 mat-theme-cleanup-extra-apps:
   pkg.removed:
@@ -82,3 +83,10 @@ mat-theme-cleanup-plank-{{ item }}:
     - require:
       - user: mat-user-{{ user }}
 {% endfor %}
+
+mat-theme-cleanup-root-dir:
+  file.absent:
+    - name: /root/.cache/
+    - watch:
+      - file: mat-theme-cleanup-docker-wrapper
+  
