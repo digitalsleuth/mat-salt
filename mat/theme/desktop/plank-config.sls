@@ -1,4 +1,3 @@
-{% set desktop_items = ['libreoffice-calc.dockitem','libreoffice-writer.dockitem','org.gnome.Software.dockitem', 'org.gnome.Geary.desktop', 'nemo.dockitem'] %}
 {% set user = salt['pillar.get']('mat_user', 'mat') %}
 
 {% if user == "root" %}
@@ -10,14 +9,6 @@
 include:
   - mat.config.user
   - mat.theme.desktop.ubuntu-budgie-desktop
-
-{% for item in desktop_items %}
-mat-theme-desktop-plank-config-clean-{{ item }}:
-  file.absent:
-    - name: {{ home }}/.config/plank/dock1/launchers/{{ item }}
-    - require:
-      - user: mat-user-{{ user }}
-{% endfor %}
 
 mat-theme-desktop-plank-config:
   file.recurse:

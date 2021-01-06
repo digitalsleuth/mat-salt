@@ -11,3 +11,6 @@ mat-theme-ssh-sshd-disable:
       - sls: mat.apt-packages.openssh
 
 {% endif %}
+
+ssh-inside-docker:
+  test.nop

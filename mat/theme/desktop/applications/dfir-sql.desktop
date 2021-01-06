@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=dfir-sql
+Exec=dfir-sql
+Icon=cherrytree
+Categories=References;
+Comment=DFIR SQL Queries common in Mobile Analysis

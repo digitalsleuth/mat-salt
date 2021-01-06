@@ -1,3 +1,4 @@
+{% set desktop_items = ['libreoffice-calc.dockitem','libreoffice-writer.dockitem','org.gnome.Software.dockitem', 'org.gnome.Geary.desktop', 'nemo.dockitem'] %}
 {%- set user = salt['pillar.get']('mat_user', 'mat') -%}
 
 {% if user == "root" %}
@@ -73,3 +74,11 @@ mat-user-directories-{{ user }}:
       - group
     - require:
       - user: mat-user-{{ user }}
+
+{% for item in desktop_items %}
+mat-theme-cleanup-plank-{{ item }}:
+  file.absent:
+    - name: {{ home }}/.config/plank/dock1/launchers/{{ item }}
+    - require:
+      - user: mat-user-{{ user }}
+{% endfor %}
