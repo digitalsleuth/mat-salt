@@ -1,0 +1,2 @@
+nemo:
+  pkg.installed

@@ -17,6 +17,7 @@ gsettings set org.gnome.desktop.screensaver primary-color "#1644B9"
 
 #Customization
 gsettings set com.gexperts.Tilix.Settings use-tabs 'true'
+dconf write /com/gexperts/Tilix/session-name \'${title}\'
 gsettings set com.solus-project.budgie-raven show-power-strip 'true'
 gsettings set io.elementary.desktop.wingpanel.applications-menu enable-powerstrip 'true'
 gsettings set io.elementary.desktop.wingpanel.applications-menu use-category 'true'
@@ -28,7 +29,7 @@ dconf write /com/solus-project/budgie-raven/show-mpris-widget false
 dconf write /com/solus-project/budgie-raven/show-sound-output-widget false
 
 #Remove excess plank icons which appear on first login
-rm ~/.config/plank/dock1/launchers/org.gnome.Software.desktop
+rm ~/.config/plank/dock1/launchers/org.gnome.Software.dockitem
 rm ~/.config/plank/dock1/launchers/libreoffice-calc.dockitem
 rm ~/.config/plank/dock1/launchers/libreoffice-writer.dockitem
 rm ~/.config/plank/dock1/launchers/org.gnome.Geary.desktop

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Cheat Sheets
+Comment=Various mobile forensics cheat sheets
+Type=Application
+Exec=nemo references
+Terminal=false
+Icon=folder
+Categories=References;
+

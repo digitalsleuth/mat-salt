@@ -6,7 +6,9 @@ include:
   - mat.theme.desktop.plank-config
   - mat.theme.desktop.applications
   - mat.theme.desktop.xwayland
+  - mat.theme.desktop.nemo
   - mat.theme.desktop.gdm3
+  - mat.theme.desktop.tab-title
   - mat.theme.desktop.mat-logo
 
 mat-theme-desktop:
@@ -19,5 +21,7 @@ mat-theme-desktop:
       - sls: mat.theme.desktop.plank-config
       - sls: mat.theme.desktop.applications
       - sls: mat.theme.desktop.xwayland
+      - sls: mat.theme.desktop.nemo
       - sls: mat.theme.desktop.gdm3
+      - sls: mat.theme.desktop.tab-title
       - sls: mat.theme.desktop.mat-logo

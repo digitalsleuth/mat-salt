@@ -14,14 +14,14 @@ include:
 mat-resources-dfir-sql-query-source:
   git.cloned:
     - name: https://github.com/digitalsleuth/dfir-sql-query-repo.git
-    - target: {{ home }}/dfir-sql-query
+    - target: {{ home }}/references/dfir-sql-query
     - require:
       - sls: mat.apt-packages.git
       - sls: mat.config.user
 
 mat-resources-dfir-sql-query-permissions:
   file.directory:
-    - name: {{ home }}/dfir-sql-query
+    - name: {{ home }}/references/dfir-sql-query
     - user: {{ user }}
     - group: {{ user }}
     - dir_mode: 755
@@ -41,7 +41,7 @@ mat-resources-dfir-sql-query-wrapper:
     - mode: 755
     - contents:
       - '#!/bin/bash'
-      - cherrytree {{ home }}/dfir-sql-query/dfir-sql-query.ctb &
+      - cherrytree {{ home }}/references/dfir-sql-query/dfir-sql-query.ctb &
     - watch:
       - git: mat-resources-dfir-sql-query-source
     - require:
