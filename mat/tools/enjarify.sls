@@ -24,11 +24,11 @@ mat-tools-enjarify-clone:
       - sls: mat.apt-packages.git
       - sls: mat.apt-packages.python3
 
-mat-tools-enjarify-wrapper:
-  file.managed:
+mat-tools-enjarify-link:
+  file.symlink:
+    - target: /usr/local/src/enjarify/enjarify.sh
     - name: /usr/local/bin/enjarify
     - mode: 755
-    - contents:
-      - '/usr/bin/python3 -O -m usr.local.src.enjarify.enjarify.main ${*}'
+    - force: True
     - watch:
       - git: mat-tools-enjarify-clone

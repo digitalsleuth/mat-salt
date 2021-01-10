@@ -17,13 +17,15 @@ include:
   - mat.tools.enjarify
   - mat.tools.flexdecrypt
   - mat.tools.ghidra
+  - mat.tools.heimdall
   - mat.tools.ileapp
   - mat.tools.impactor
   - mat.tools.jad
   - mat.tools.jadx
+  - mat.tools.java-adb-remote-screen
   - mat.tools.jd-gui
   - mat.tools.openmf
-  - mat.tools.pvrtextools
+#  - mat.tools.pvrtextools
   - mat.tools.simplify
   - mat.tools.smali
   - mat.tools.teleparser
@@ -50,13 +52,15 @@ mat-tools:
       - sls: mat.tools.enjarify
       - sls: mat.tools.flexdecrypt
       - sls: mat.tools.ghidra
+      - sls: mat.tools.heimdall
       - sls: mat.tools.ileapp
       - sls: mat.tools.impactor
       - sls: mat.tools.jad
       - sls: mat.tools.jadx
+      - sls: mat.tools.java-adb-remote-screen
       - sls: mat.tools.jd-gui
       - sls: mat.tools.openmf
-      - sls: mat.tools.pvrtextools
+#      - sls: mat.tools.pvrtextools
       - sls: mat.tools.simplify
       - sls: mat.tools.smali
       - sls: mat.tools.teleparser

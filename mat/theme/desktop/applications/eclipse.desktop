@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Eclipse IDE
+Comment=Eclipse IDE for Java
+Type=Application
+Exec=eclipse
+Icon=eclipse
+Categories=Development;Analysis;Android;
+

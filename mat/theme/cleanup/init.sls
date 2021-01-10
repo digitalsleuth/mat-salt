@@ -88,5 +88,5 @@ mat-theme-cleanup-root-dir:
   file.absent:
     - name: /root/.cache/
     - watch:
-      - file: mat-theme-cleanup-docker-wrapper
+      - cmd: mat-theme-cleanup-autoremove
   

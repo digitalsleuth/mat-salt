@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
+# Name: Heimdall
+# Website: https://glassechidna.com.au/
+# Description: Open source software for flashing firmware to Samsung mobile devices
 # Category:
-# Author: 
-# License: 
-# Notes: 
+# Author: Benjamin Dobell
+# License: MIT License (https://gitlab.com/BenjaminDobell/Heimdall/-/blob/master/LICENSE)
+# Notes: heimdall, heimdall-frontend
 
 include:
   - mat.apt-packages.build-essential

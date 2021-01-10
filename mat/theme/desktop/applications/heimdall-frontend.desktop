@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Heimdall Frontend
+Comment=Firmware flasher for Samsung mobile devices
+Type=Application
+Exec=heimdall-frontend
+Icon=android-studio
+Categories=Development;Analysis;Android;
+

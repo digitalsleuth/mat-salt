@@ -88,7 +88,10 @@ mat-theme-desktop-applications-icons:
   file.recurse:
     - name: /usr/share/icons/
     - source: salt://mat/theme/desktop/applications/
-    - include_pat: '*.png'
+    - include_pat:
+      - '*.png'
+      - '*.xpm'
+      - '*.svg'
     - user: root
     - group: root
     - file_mode: 644

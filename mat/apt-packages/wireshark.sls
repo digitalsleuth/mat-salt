@@ -6,5 +6,5 @@
 # License: GNU General Public License (GPL) v2 (https://www.wireshark.org/about.html#legal)
 # Notes: 
 
-wireshark-dev:
+wireshark:
   pkg.installed

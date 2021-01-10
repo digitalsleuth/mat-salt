@@ -21,3 +21,15 @@ gsettings set com.solus-project.budgie-raven show-power-strip 'true'
 gsettings set io.elementary.desktop.wingpanel.applications-menu enable-powerstrip 'true'
 gsettings set io.elementary.desktop.wingpanel.applications-menu use-category 'true'
 dconf write /net/launchpad/plank/docks/dock1/position \'left\'
+dconf write /net/launchpad/plank/docks/dock1/theme \'Transparent\'
+dconf write /com/solus-project/budgie-panel/dark-theme true
+dconf write /com/solus-project/budgie-raven/show-mic-input-widget false
+dconf write /com/solus-project/budgie-raven/show-mpris-widget false
+dconf write /com/solus-project/budgie-raven/show-sound-output-widget false
+
+#Remove excess plank icons which appear on first login
+rm ~/.config/plank/dock1/launchers/org.gnome.Software.desktop
+rm ~/.config/plank/dock1/launchers/libreoffice-calc.dockitem
+rm ~/.config/plank/dock1/launchers/libreoffice-writer.dockitem
+rm ~/.config/plank/dock1/launchers/org.gnome.Geary.desktop
+

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=ClassyShark
+Comment=Android App Analyzer
+Type=Application
+Exec=classyshark
+Icon=android-studio
+Categories=Development;Analysis;Android;

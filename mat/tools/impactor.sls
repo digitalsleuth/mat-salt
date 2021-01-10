@@ -11,6 +11,7 @@ include:
   - mat.apt-packages.libgtk2
   - mat.apt-packages.libsm6
   - mat.apt-packages.libcanberra-gtk-module
+  - mat.apt-packages.libncurses5
 
 mat-tools-impactor-source:
   archive.extracted:
@@ -23,6 +24,10 @@ mat-tools-impactor-source:
     - enforce_toplevel: False
     - require:
       - sls: mat.apt-packages.libcanberra-gtk-module
+      - sls: mat.apt-packages.libatomic1
+      - sls: mat.apt-packages.libgtk2
+      - sls: mat.apt-packages.libsm6
+      - sls: mat.apt-packages.libncurses5
 
 /usr/local/bin/impactor:
   file.symlink:

@@ -8,6 +8,8 @@
 
 include:
   - mat.apt-packages.python2-pip
+  - mat.python2-packages.twisted
+  - mat.python2-packages.service-identity
 
 mat-python2-packages-drozer:
   pip.installed:
@@ -15,3 +17,5 @@ mat-python2-packages-drozer:
     - bin_env: /usr/bin/python2
     - require:
       - sls: mat.apt-packages.python2-pip
+      - sls: mat.python2-packages.twisted
+      - sls: mat.python2-packages.service-identity

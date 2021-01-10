@@ -18,7 +18,6 @@
 include:
   - mat.apt-packages.unzip
   - mat.tools.apktool
-  - mat.apt-packages.python2-pip
   - mat.apt-packages.python3-pip
   - mat.apt-packages.baksmali
   - mat.apt-packages.dex2jar

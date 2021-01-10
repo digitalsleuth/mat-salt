@@ -15,7 +15,6 @@ mat-radare2-source:
     - source: https://github.com/radareorg/radare2/releases/download/4.5.0/radare2-ubuntu-1804_4.5.0_amd64.deb
     - source_hash: sha256=648dd1478727ee8250504a66ed60fcbe4371cdc2b5c07100834c453e5deb2504
 
-
 mat-radare2:
   pkg.installed:
     - sources:
@@ -31,6 +30,12 @@ mat-radare2-cleanup:
     - require:
       - pkg: mat-radare2
 
+mat-radare2-cleanup-deb:
+  file.absent:
+    - name: /usr/local/src/radare2-ubuntu-1804_4.5.0_amd64.deb
+    - watch:
+      - pkg: mat-radare2
+
 mat-radare2-init:
   cmd.wait:
     - name: r2pm init
@@ -42,3 +47,5 @@ mat-radare2-update:
     - name: r2pm update
     - watch:
       - cmd: mat-radare2-init
+
+

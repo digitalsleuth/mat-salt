@@ -1,10 +1,10 @@
 # Name: OpenMF
-# Website: 
-# Description:
+# Website: https://github.com/scorelab/openmf
+# Description: Open Source Mobile Forensics Investigtion Tool for Android
 # Category:
-# Author: 
-# License: 
-# Notes:
+# Author: SCoRe Lab
+# License: Apache License 2.0 (https://github.com/scorelab/OpenMF/blob/master/LICENSE)
+# Notes: collector, converter
 
 include:
   - mat.apt-packages.python3-pip

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Cutter
+Comment=Reverse engineering toolset
+Type=Application
+Exec=cutter
+Icon=cutter
+Categories=Development;Analysis;

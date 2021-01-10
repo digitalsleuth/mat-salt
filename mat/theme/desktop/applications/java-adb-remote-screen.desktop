@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=ADB Remote Screen
+Comment=Java ADB Remote Screen
+Type=Application
+Exec=java-adb-remote-screen
+Icon=java-adb-remote-screen
+Categories=Development;Analysis;Android;

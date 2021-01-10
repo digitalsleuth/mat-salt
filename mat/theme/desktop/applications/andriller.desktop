@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Andriller CE
+Comment=Android acquisition software
+Exec=andriller-gui.py
+Icon=andriller
+Terminal=false
+Type=Application
+Categories=Android;Analysis;
+

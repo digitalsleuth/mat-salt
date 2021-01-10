@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Bytecode Viewer
+Comment=Android APK Reverse Engineering Suite
+Type=Application
+Exec=bytecode-viewer
+Icon=bytecode-viewer
+Categories=Development;Analysis;Android;
+

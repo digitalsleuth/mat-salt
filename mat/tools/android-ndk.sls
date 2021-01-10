@@ -1,6 +1,4 @@
-{% set prev_version="None" %}
-{% set curr_version="android-ndk-r21d-linux-x86_64.zip" %}
-# Name:
+# Name: Android NDK
 # Website:
 # Description:
 # Category:
@@ -8,6 +6,8 @@
 # License:
 # Notes:
 
+{% set prev_version = "None" %}
+{% set curr_version = "android-ndk-r21d-linux-x86_64.zip" %}
 {% set user = salt['pillar.get']('mat_user', 'mat') %}
 
 {% if user == "root" %}

@@ -1,6 +1,7 @@
 include:
   - mat.python3-packages.wheel
   - mat.python3-packages.adb-shell
+  - mat.python3-packages.andriller
   - mat.python3-packages.androguard
   - mat.python3-packages.androwarn
   - mat.python3-packages.apkid
@@ -11,6 +12,7 @@ include:
   - mat.python3-packages.droidlysis
   - mat.python3-packages.frida
   - mat.python3-packages.googleplay-api
+#  - mat.python3-packages.gpsoauth
   - mat.python3-packages.objection
   - mat.python3-packages.protobuf-inspector
   - mat.python3-packages.pycryptodome
@@ -25,6 +27,7 @@ mat-python3-packages:
     - require:
       - sls: mat.python3-packages.wheel
       - sls: mat.python3-packages.adb-shell
+      - sls: mat.python3-packages.andriller
       - sls: mat.python3-packages.androguard
       - sls: mat.python3-packages.androwarn
       - sls: mat.python3-packages.apkid
@@ -35,6 +38,7 @@ mat-python3-packages:
       - sls: mat.python3-packages.droidlysis
       - sls: mat.python3-packages.frida
       - sls: mat.python3-packages.googleplay-api
+#      - sls: mat.python3-packages.gpsoauth
       - sls: mat.python3-packages.objection
       - sls: mat.python3-packages.protobuf-inspector
       - sls: mat.python3-packages.pycryptodome

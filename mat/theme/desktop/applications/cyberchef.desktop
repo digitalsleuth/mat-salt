@@ -3,5 +3,5 @@ Type=Application
 Name=CyberChef
 Exec=cyberchef
 Icon=cyberchef
-Categories=Development;
+Categories=Development;Analysis;
 Comment=The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis

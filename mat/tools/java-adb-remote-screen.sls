@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
+# Name: Java ADB Remote Screen
+# Website: https://github.com/MajeurAndroid/java-adb-remote-screen
+# Description: Control Android phone from PC using ADB
 # Category:
-# Author: 
-# License: 
-# Notes: 
+# Author: MajeurAndroid
+# License: Apache License 2.0 (https://github.com/MajeurAndroid/java-adb-remote-screen#license)
+# Notes: java-adb-remote-screen
 
 include:
   - mat.apt-packages.default-jre

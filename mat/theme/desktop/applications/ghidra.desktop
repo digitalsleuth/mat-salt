@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Ghidra
+Comment=NSA Reverse engineering toolset
+Type=Application
+Exec=ghidra
+Icon=ghidra
+Categories=Development;Analysis;
+
