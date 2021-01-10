@@ -2,7 +2,7 @@
 Name=Androguard GUI
 Comment=Androguard GUI
 Exec=androgui.py
-Icon=android-studio
+Icon=androguard
 Terminal=false
 Type=Application
 Categories=Android;Analysis;

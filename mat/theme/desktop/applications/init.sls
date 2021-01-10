@@ -92,6 +92,7 @@ mat-theme-desktop-applications-icons:
       - '*.png'
       - '*.xpm'
       - '*.svg'
+      - '*.ico'
     - user: root
     - group: root
     - file_mode: 644
