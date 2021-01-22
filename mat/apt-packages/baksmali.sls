@@ -4,7 +4,7 @@
 # Category: 
 # Author: Ben Gruver
 # License: Apache License 2.0 (https://bitbucket.org/JesusFreke/smali/src/master/NOTICE)
-# Notes:
+# Notes: baksmali
 
 include:
   - mat.repos.remnux

@@ -1,10 +1,10 @@
 # Name: Docker
 # Website: https://www.docker.com
-# Description: 
+# Description: Container creation and management tool
 # Category: 
 # Author: Docker Inc
 # License: Apache License 2.0 (https://github.com/moby/moby/blob/master/LICENSE)
-# Notes: 
+# Notes: docker
 
 include:
   - mat.repos.docker

@@ -11,8 +11,10 @@ include:
   - mat.tools.bytecode-viewer
   - mat.tools.cfr
   - mat.tools.classyshark
+  - mat.tools.csvview
   - mat.tools.cutter
   - mat.tools.cyberchef
+  - mat.tools.datcon
   - mat.tools.eclipse
   - mat.tools.enjarify
   - mat.tools.flexdecrypt
@@ -46,8 +48,10 @@ mat-tools:
       - sls: mat.tools.bytecode-viewer
       - sls: mat.tools.cfr
       - sls: mat.tools.classyshark
+      - sls: mat.tools.csvview
       - sls: mat.tools.cutter
       - sls: mat.tools.cyberchef
+      - sls: mat.tools.datcon
       - sls: mat.tools.eclipse
       - sls: mat.tools.enjarify
       - sls: mat.tools.flexdecrypt

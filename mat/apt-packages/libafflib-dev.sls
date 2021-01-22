@@ -1,9 +1,9 @@
-# Name: 
-# Website: 
-# Description:
+# Name: libafflib-dev
+# Website: https://github.com/sshock/AFFLIBv3
+# Description: Library for utilizing the Advanced Forensic Format
 # Category:
-# Author: 
-# License: 
+# Author: https://github.com/sshock/AFFLIBv3/blob/master/AUTHORS
+# License: Multi-License (https://github.com/sshock/AFFLIBv3/blob/master/COPYING)
 # Notes: 
 
 include:
