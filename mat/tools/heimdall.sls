@@ -3,7 +3,7 @@
 # Description: Open source software for flashing firmware to Samsung mobile devices
 # Category:
 # Author: Benjamin Dobell
-# License: MIT License (https://gitlab.com/BenjaminDobell/Heimdall/-/blob/master/LICENSE)
+# License: MIT License (https://github.com/Benjamin-Dobell/Heimdall/blob/master/LICENSE)
 # Notes: heimdall, heimdall-frontend
 
 include:
@@ -17,7 +17,7 @@ include:
 
 mat-tools-heimdall-source:
   git.cloned:
-    - name: https://gitlab.com/BenjaminDobell/Heimdall.git
+    - name: https://github.com/Benjamin-Dobell/Heimdall.git
     - target: /usr/local/src/mat/files/heimdall
     - require:
       - sls: mat.apt-packages.git

@@ -12,7 +12,7 @@ mat-apt-packages-python2-pip:
 {%- elif grains['oscodename'] == "focal" %}
 mat-apt-packages-python2-pip-install-script:
   cmd.run:
-    - name: curl -o /tmp/get-pip.py https://bootstrap.pypa.io/get-pip.py 
+    - name: curl -o /tmp/get-pip.py https://bootstrap.pypa.io/pip/2.7/get-pip.py
     - unless: which pip2
     - require:
       - sls: mat.apt-packages.python2

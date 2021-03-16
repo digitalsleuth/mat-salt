@@ -17,7 +17,7 @@ mat-tools-impactor-source:
   archive.extracted:
     - name: /usr/local/impactor
     - source: https://cydia.saurik.com/api/latest/5
-    - source_hash: sha256=23b758162a34c6160021e6f82193df76bfbcc09f9476e492b76b130bb4e9e323
+    - source_hash: sha256=73b8aeb26b13c0993eedd74f6c6f833c9fb0ef0119c33a69a4efbc3298dc8b5b
     - archive_format: tar
     - makedirs: True
     - overwrite: True
