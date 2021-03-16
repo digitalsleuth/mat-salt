@@ -27,7 +27,6 @@ include:
 mat-python3-packages-droidlysis:
   pip.installed:
     - name: droidlysis
-    - upgrade: True
     - bin_env: /usr/bin/python3
     - require:
       - sls: mat.apt-packages.unzip

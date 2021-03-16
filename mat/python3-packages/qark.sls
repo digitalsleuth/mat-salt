@@ -13,6 +13,5 @@ mat-python3-packages-qark-install:
   pip.installed:
     - name: qark
     - bin_env: /usr/bin/python3
-    - upgrade: True
     - require:
       - sls: mat.apt-packages.python3-pip

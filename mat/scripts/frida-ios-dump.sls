@@ -14,7 +14,6 @@ mat-scripts-frida-ios-dump:
   pip.installed:
     - bin_env: /usr/bin/python3
     - requirements: https://github.com/AloneMonkey/frida-ios-dump/raw/master/requirements.txt
-    - upgrade: True
     - require:
       - sls: mat.apt-packages.python3-pip
       - sls: mat.python3-packages.frida

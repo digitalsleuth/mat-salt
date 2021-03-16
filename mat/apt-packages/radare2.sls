@@ -13,7 +13,7 @@ mat-radare2-source:
   file.managed:
     - name: /usr/local/src/radare2_5.1.1_amd64.deb
     - source: https://github.com/radareorg/radare2/releases/download/5.1.1/radare2_5.1.1_amd64.deb
-    - source_hash: sha256=648dd1478727ee8250504a66ed60fcbe4371cdc2b5c07100834c453e5deb2504
+    - source_hash: sha256=67b94af19c7df3a8cb46ec86546b2b06508f9c16d6007e0e4f77555a6b057331
 
 mat-radare2:
   pkg.installed:
