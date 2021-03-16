@@ -11,14 +11,14 @@ include:
 
 mat-radare2-source:
   file.managed:
-    - name: /usr/local/src/radare2-ubuntu-1804_4.5.0_amd64.deb
-    - source: https://github.com/radareorg/radare2/releases/download/4.5.0/radare2-ubuntu-1804_4.5.0_amd64.deb
+    - name: /usr/local/src/radare2_5.1.1_amd64.deb
+    - source: https://github.com/radareorg/radare2/releases/download/5.1.1/radare2_5.1.1_amd64.deb
     - source_hash: sha256=648dd1478727ee8250504a66ed60fcbe4371cdc2b5c07100834c453e5deb2504
 
 mat-radare2:
   pkg.installed:
     - sources:
-      - radare2: /usr/local/src/radare2-ubuntu-1804_4.5.0_amd64.deb
+      - radare2: /usr/local/src/radare2_5.1.1_amd64.deb
     - watch:
       - file: mat-radare2-source
     - require:
@@ -32,7 +32,7 @@ mat-radare2-cleanup:
 
 mat-radare2-cleanup-deb:
   file.absent:
-    - name: /usr/local/src/radare2-ubuntu-1804_4.5.0_amd64.deb
+    - name: /usr/local/src/radare2_5.1.1_amd64.deb
     - watch:
       - pkg: mat-radare2
 

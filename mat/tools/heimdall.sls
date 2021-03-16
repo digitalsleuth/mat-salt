@@ -15,6 +15,10 @@ include:
   - mat.apt-packages.libgl1-mesa-dev
   - mat.apt-packages.git
 
+mat-tools-heimdall-pre-clean:
+  file.absent:
+    - name: /usr/local/src/mat/files/heimdall
+
 mat-tools-heimdall-source:
   git.cloned:
     - name: https://github.com/Benjamin-Dobell/Heimdall.git
