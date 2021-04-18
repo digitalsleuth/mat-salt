@@ -10,6 +10,7 @@ include:
   - mat.theme.desktop.gdm3
   - mat.theme.desktop.tab-title
   - mat.theme.desktop.mat-logo
+  - mat.theme.desktop.gnome-tweaks
 
 mat-theme-desktop:
   test.nop:
@@ -25,3 +26,4 @@ mat-theme-desktop:
       - sls: mat.theme.desktop.gdm3
       - sls: mat.theme.desktop.tab-title
       - sls: mat.theme.desktop.mat-logo
+      - sls: mat.theme.desktop.gnome-tweaks

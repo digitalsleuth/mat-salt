@@ -11,7 +11,7 @@ gsettings set org.gnome.desktop.screensaver lock-enabled 'false'
 
 #Setup color/font scheme
 gsettings set org.gnome.desktop.background picture-uri 'file:///usr/local/share/mat/mat-logo.png'
-gsettings set org.gnome.desktop.background picture-options "wallpaper"
+gsettings set org.gnome.desktop.background picture-options "scaled"
 gsettings set org.gnome.desktop.background primary-color "#1644B9"
 gsettings set org.gnome.desktop.screensaver primary-color "#1644B9"
 
