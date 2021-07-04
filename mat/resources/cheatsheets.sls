@@ -12,8 +12,8 @@ include:
 mat-resources-cheatsheets-smartphone:
   file.managed:
     - name: {{ home }}/references/DFIR-Smartphone-Forensics-Poster.pdf
-    - source: https://digital-forensics.sans.org/media/DFIR-Smartphone-Forensics-Poster.pdf
-    - source_hash: sha256=1b2d79a2abb9d2122f77e682a61bc5b85ae2e5f58e846c49424080226e50d393
+    - source: https://sansorg.egnyte.com/dd/70HVz2FsAd
+    - source_hash: sha256=6b2ba452137e2ef6572781f673817f4f15f3555a4b2f47b16629350f9990c1d3
     - user: {{ user }}
     - group: {{ user }}
     - makedirs: True
@@ -24,7 +24,7 @@ mat-resources-cheatsheets-smartphone:
 mat-resources-cheatsheets-sqlite:
   file.managed:
     - name: {{ home }}/references/SQlite-PocketReference-final.pdf
-    - source: https://digital-forensics.sans.org/media/SQlite-PocketReference-final.pdf
+    - source: https://sansorg.egnyte.com/dd/KKxPl6LsbF
     - source_hash: sha256=954d62787abe3bad95f59e2d671eac202dea2607ed5cdb757dbbb688b873f679
     - user: {{ user }}
     - group: {{ user }}
@@ -36,7 +36,7 @@ mat-resources-cheatsheets-sqlite:
 mat-resources-cheatsheets-mobile-device:
   file.managed:
     - name: {{ home }}/references/mobile-device-forensic-process-v3.pdf
-    - source: https://digital-forensics.sans.org/media/mobile-device-forensic-process-v3.pdf
+    - source: https://sansorg.egnyte.com/dd/lpIZSVtbFu
     - source_hash: sha256=d71562eff2f4684c67b541fce9d14c0bff2247a073f529299ad9969cb1ce87c8
     - user: {{ user }}
     - group: {{ user }}
@@ -48,7 +48,7 @@ mat-resources-cheatsheets-mobile-device:
 mat-resources-cheatsheets-FOR518:
   file.managed:
     - name: {{ home }}/references/FOR518-Reference-Sheet.pdf
-    - source: https://digital-forensics.sans.org/media/FOR518-Reference-Sheet.pdf
+    - source: https://sansorg.egnyte.com/dd/zngSJguNqj
     - source_hash: sha256=f2b628cf2c9ed441c353fe6bb07157d8617d15b97d705de6c82f7d3d1d35d909
     - user: {{ user }}
     - group: {{ user }}
@@ -56,3 +56,17 @@ mat-resources-cheatsheets-FOR518:
     - show_changes: False
     - require:
       - user: mat-user-{{ user }}
+
+mat-resources-cheatsheets-FOR585:
+  file.managed:
+    - name: {{ home }}/references/FOR585-Reference-Sheet.pdf
+    - source: https://sansorg.egnyte.com/dd/ljmbARD8io
+    - source_hash: sha256=98c9be2bc34e52ebb0448741d08f0c7fb44a2aba7d8e2232005f64b0bb6c7006
+    - user: {{ user }}
+    - group: {{ user }}
+    - makedirs: True
+    - show_changes: False
+    - require:
+      - user: mat-user-{{ user }}
+
+
