@@ -8,6 +8,7 @@
 
 include:
   - mat.apt-packages.python3-pip
+  - mat.python3-packages.setuptools-rust
 
 mat-python3-packages-chepy:
   pip.installed:
@@ -17,3 +18,4 @@ mat-python3-packages-chepy:
     - bin_env: /usr/bin/python3
     - require:
       - sls: mat.apt-packages.python3-pip
+      - sls: mat.python3-packages.setuptools-rust

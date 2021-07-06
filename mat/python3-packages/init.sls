@@ -1,5 +1,6 @@
 include:
   - mat.python3-packages.wheel
+  - mat.python3-packages.pip
   - mat.python3-packages.adb-shell
   - mat.python3-packages.andriller
   - mat.python3-packages.androguard
@@ -18,6 +19,7 @@ include:
   - mat.python3-packages.pycryptodome
   - mat.python3-packages.pyperclip
   - mat.python3-packages.qark
+  - mat.python3-packages.setuptools-rust
   - mat.python3-packages.smalisca
   - mat.python3-packages.time-decode
   - mat.python3-packages.yara-python
@@ -26,6 +28,7 @@ mat-python3-packages:
   test.nop:
     - require:
       - sls: mat.python3-packages.wheel
+      - sls: mat.python3-packages.pip
       - sls: mat.python3-packages.adb-shell
       - sls: mat.python3-packages.andriller
       - sls: mat.python3-packages.androguard
@@ -44,6 +47,7 @@ mat-python3-packages:
       - sls: mat.python3-packages.pycryptodome
       - sls: mat.python3-packages.pyperclip
       - sls: mat.python3-packages.qark
+      - sls: mat.python3-packages.setuptools-rust
       - sls: mat.python3-packages.smalisca
       - sls: mat.python3-packages.time-decode
       - sls: mat.python3-packages.yara-python
