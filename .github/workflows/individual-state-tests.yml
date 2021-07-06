@@ -1,0 +1,27 @@
+name: individual-state-tests
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 9 * * 0
+
+jobs:
+  individual_states:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        os: [bionic, focal]
+        state:
+          - mat.python2-packages
+          - mat.python3-packages
+          - mat.tools
+
+    container:
+      image: docker://digitalsleuth/mat-salt-tester:${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: test-state
+        run: |
+          salt-call -l info --file-root . --local --retcode-passthrough --state-output=mixed state.sls ${{ matrix.state }} pillar="{mat_user: root}"
