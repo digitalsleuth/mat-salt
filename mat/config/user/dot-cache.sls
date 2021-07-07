@@ -1,7 +1,9 @@
 {%- set user = salt['pillar.get']('mat_user', 'mat') -%}
-
-{% if user != "root" %}
+{%- if user == "root" -%}
+  {%- set home = "/root" -%}
+{%- else -%}
   {% set home = "/home/" + user %}
+{% endif %}
 
 include:
   - mat.config.user
@@ -17,5 +19,3 @@ mat-dot-cache-directory:
       - group
     - require:
       - user: mat-user-{{ user }}
-
-{% endif %}

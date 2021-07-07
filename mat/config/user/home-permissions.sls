@@ -1,6 +1,9 @@
 {%- set user = salt['pillar.get']('mat_user', 'mat') -%}
-{% if user != "root" %}
-  {% set home = "/home/" + user  %}
+{%- if user == "root" -%}
+  {%- set home = "/root" -%}
+{%- else -%}
+  {% set home = "/home/" + user %}
+{% endif %}
 
 include:
   - mat.config.user
@@ -15,5 +18,3 @@ mat-config-user-home-permissions:
       - group
     - require:
       - user: mat-user-{{ user }}
-
-{% endif %}
