@@ -1,7 +1,7 @@
 # Name: qark
 # Website: https://github.com/linkedin/qark
 # Description: Android Vulnerability Assessment Tool
-# Category:
+# Category: Android
 # Author: LinkedIn
 # License: Apache 2.0 (https://github.com/linkedin/qark/blob/master/LICENSE)
 # Notes: Required LANG and LANGUAGE set to C.UTF-8

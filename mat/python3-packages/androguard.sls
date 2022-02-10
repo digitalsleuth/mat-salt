@@ -1,13 +1,12 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
+# Name: androguard
+# Website: https://androguard.readthedocs.io/en/latest/
+# Description: Python3-based Android Analysis Toolset
+# Category: Android
+# Author: https://github.com/androguard/androguard#authors-androguard-team
+# License: Apache License 2.0 (https://github.com/androguard/androguard/blob/master/LICENCE-2.0)
 # Notes: 
 
 include:
-  - mat.apt-packages.python2-pip
   - mat.apt-packages.python3-pip
   - mat.apt-packages.python3-pyqt5
   - mat.python3-packages.pyperclip

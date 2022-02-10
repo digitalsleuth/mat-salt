@@ -1,5 +1,6 @@
-{% set prev_version="None" %}
-{% set curr_version="android-studio-ide-201.6953283-linux.tar.gz" %}
+{% set prev_version="android-studio-ide-201.6953283-linux.tar.gz" %}
+{% set curr_version="android-studio-2021.1.1.21-linux.tar.gz" %}
+{% set hash = "3de3092082df6ae9d3969478115efaa909539590dc5a829eb3ad6a7bd5bda2a4" %}
 # Name:
 # Website:
 # Description:
@@ -14,8 +15,8 @@ include:
 mat-tools-android-studio-source:
   file.managed:  
     - name: /usr/local/src/mat/files/{{ curr_version }}
-    - source: https://r4---sn-tt1eln7l.gvt1.com/edgedl/android/studio/ide-zips/4.1.1.0/{{ curr_version }}
-    - source_hash: sha256=68032184959c54576f119b7c7c8ded175d848374f3954fa450530d78260dd68b
+    - source: https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2021.1.1.21/{{ curr_version }}
+    - source_hash: sha256={{ hash }}
     - makedirs: True
 
 mat-tools-android-studio-archive:

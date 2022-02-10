@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Name: dnschef
+# Website: https://github.com/iphelix/dnschef
+# Description: DNS Proxy
+# Category: Scripts
+# Author: Peter Kacherginsky, Marcello Salvati
+# License: BSD 3-Clause (https://github.com/iphelix/dnschef/blob/master/LICENSE)
+# Notes: dnschef
 
 {% set user = salt['pillar.get']('mat_user', 'mat') %}
 

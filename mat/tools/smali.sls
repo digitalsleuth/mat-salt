@@ -11,9 +11,9 @@ include:
 
 mat-tools-smali-source:
   file.managed:
-    - name: /opt/smali/smali-2.4.0.jar
-    - source: https://bitbucket.org/JesusFreke/smali/downloads/smali-2.4.0.jar
-    - source_hash: sha256=cdbbae7d358374f955e8e3db89390db039cc3f6668e4ea002d9a14af9c87a0d9
+    - name: /opt/smali/smali-2.5.2.jar
+    - source: https://bitbucket.org/JesusFreke/smali/downloads/smali-2.5.2.jar
+    - source_hash: sha256=9544299578b16f771d8aa8eaefe0d3718ca03478c16f3c356f2fcf1366bfb116
     - mode: 755
     - makedirs: True
     - require:
@@ -25,7 +25,7 @@ mat-tools-smali-wrapper:
     - mode: 755
     - contents:
       - '#!/bin/bash'
-      - java -jar /opt/smali/smali-2.4.0.jar ${*}
+      - java -jar /opt/smali/smali-2.5.2.jar ${*}
     - watch:
       - file: mat-tools-smali-source
 

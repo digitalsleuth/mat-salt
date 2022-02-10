@@ -1,9 +1,9 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
+# Name: sysdiagnose
+# Website: https://github.com/cheeky4n6monkey/iOS_sysdiagnose_forensic_scripts
+# Description: Scripts to parse iOS Sysdiagnose logs
+# Category: iOS
+# Author: Adrian Leong
+# License: Unknown, Free to use
 # Notes: 
 
 {% set files = ['sysdiagnose-appconduit.py','sysdiagnose-appupdates.py','sysdiagnose-mobileactivation.py','sysdiagnose-mobilebackup.py','sysdiagnose-mobilecontainermanager.py','sysdiagnose-net-ext-cache.py','sysdiagnose-networkinterfaces.py','sysdiagnose-networkprefs.py','sysdiagnose-sys.py','sysdiagnose-uuid2path.py','sysdiagnose-wifi-icloud.py','sysdiagnose-wifi-kml.py','sysdiagnose-wifi-net.py','sysdiagnose-wifi-plist.py'] %}

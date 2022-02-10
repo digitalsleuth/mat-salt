@@ -1,10 +1,10 @@
 # Name: smalisca
 # Website: https://github.com/dorneanu/smalisca
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Description: Static Code Analysis for Smali files
+# Category: Android
+# Author: Victor Dorneanu
+# License: MIT (https://github.com/dorneanu/smalisca/blob/master/LICENSE.rst)
+# Notes: smalisca
 
 include:
   - mat.apt-packages.python3-pip

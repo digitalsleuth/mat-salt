@@ -1,7 +1,7 @@
 # Name: axmlparserpy
 # Website: https://github.com/kzjeef/axmlparserpy
 # Description: Python3 library for parsing Android XML
-# Category:
+# Category: Android
 # Author: https://github.com/antitree/AxmlParserPY#contributors
 # License: GNU Gneral Public License v3 (https://github.com/kzjeef/AxmlParserPY/blob/master/README)
 # Notes: import axmlparserpy

@@ -1,9 +1,9 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
+# Name: googleplay-api
+# Website: https://github.com/NoMore201/googleplay-api
+# Description: Google Play Unofficial API
+# Category: Android
+# Author: Domenico Iezzi
+# License: GNU GPL v3 (https://github.com/NoMore201/googleplay-api/blob/master/LICENSE.md)
 # Notes: 
 
 include:

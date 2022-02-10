@@ -12,8 +12,8 @@ include:
 mat-resources-cheatsheets-smartphone:
   file.managed:
     - name: {{ home }}/references/DFIR-Smartphone-Forensics-Poster.pdf
-    - source: https://sansorg.egnyte.com/dd/70HVz2FsAd
-    - source_hash: sha256=6b2ba452137e2ef6572781f673817f4f15f3555a4b2f47b16629350f9990c1d3
+    - source: https://assets.contentstack.io/v3/assets/blt36c2e63521272fdc/blt83bf07bbc4a716d9/Smartphone_Forensics_Poster.pdf
+    - source_hash: sha256=98c9be2bc34e52ebb0448741d08f0c7fb44a2aba7d8e2232005f64b0bb6c7006
     - user: {{ user }}
     - group: {{ user }}
     - makedirs: True
@@ -24,7 +24,7 @@ mat-resources-cheatsheets-smartphone:
 mat-resources-cheatsheets-sqlite:
   file.managed:
     - name: {{ home }}/references/SQlite-PocketReference-final.pdf
-    - source: https://sansorg.egnyte.com/dd/KKxPl6LsbF
+    - source: https://assets.contentstack.io/v3/assets/blt36c2e63521272fdc/blt4698e96e2d9cf51d/SQlite_Cheat_Sheet.pdf
     - source_hash: sha256=954d62787abe3bad95f59e2d671eac202dea2607ed5cdb757dbbb688b873f679
     - user: {{ user }}
     - group: {{ user }}

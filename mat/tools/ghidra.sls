@@ -1,5 +1,5 @@
-{% set prev_version="None" %}
-{% set curr_version="ghidra_9.2_PUBLIC_20201113.zip" %}
+{% set prev_version="ghidra_9.2_PUBLIC_20201113.zip" %}
+{% set curr_version="ghidra_10.1.2_PUBLIC_20220125.zip" %}
 # Name: Ghidra
 # Website: https://ghidra-sre.org
 # Description: Reverse engineering toolset
@@ -14,8 +14,8 @@ include:
 mat-tools-ghidra-source:
   file.managed:
     - name: /usr/local/src/mat/files/{{ curr_version }}
-    - source: https://ghidra-sre.org/{{ curr_version }}
-    - source_hash: sha256=ffebd3d87bc7c6d9ae1766dd3293d1fdab3232a99b170f8ea8b57497a1704ff6
+    - source: https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.2_build/{{ curr_version }}
+    - source_hash: sha256=ac96fbdde7f754e0eb9ed51db020e77208cdb12cf58c08657a2ab87cb2694940
     - makedirs: true
     - require:
       - sls: mat.apt-packages.default-jdk
@@ -30,7 +30,7 @@ mat-tools-ghidra-archive:
 
 /usr/local/bin/ghidra:
   file.symlink:
-    - target: /usr/local/ghidra_9.2_PUBLIC/ghidraRun
+    - target: /usr/local/ghidra_10.1.2_PUBLIC/ghidraRun
     - watch:
       - archive: mat-tools-ghidra-archive
 

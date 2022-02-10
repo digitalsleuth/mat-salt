@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Name: mbdbls
+# Website: https://github.com/digitalsleuth/mbdbls
+# Description: Manifest.mbdb file parser
+# Category: iOS
+# Author: Hal Pomeranz
+# License: CC BY (https://github.com/digitalsleuth/mbdbls/blob/master/LICENSE.md)
+# Notes: mbdbls.py
 
 include:
   - mat.apt-packages.python3

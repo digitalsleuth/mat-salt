@@ -8,15 +8,15 @@
 
 mat-tools-genymotion-source:
   file.managed:
-    - name: /usr/local/src/mat/files/genymotion-3.1.2-linux_x64.bin
-    - source: https://dl.genymotion.com/releases/genymotion-3.1.2/genymotion-3.1.2-linux_x64.bin
-    - source_hash: sha256=41e9b4486a73468ecefbf7aa9a63292281c69cb45fe0cb193d290b2b921d0433
+    - name: /usr/local/src/mat/files/genymotion-3.2.1-linux_x64.bin
+    - source: https://dl.genymotion.com/releases/genymotion-3.2.1/genymotion-3.2.1-linux_x64.bin
+    - source_hash: sha256=c8273351f88c72ebbd39ab8c0e631db6785e0c15e20bdb4e12ed1c5805bde453
     - mode: 755
     - makedirs: True
 
 mat-tools-genymotion-install:
   cmd.run:
-    - name: /usr/local/src/mat/files/genymotion-3.1.2-linux_x64.bin -y --destination /usr/local/src/
+    - name: /usr/local/src/mat/files/genymotion-3.2.1-linux_x64.bin -y --destination /usr/local/src/
     - require:
       - file: mat-tools-genymotion-source
 

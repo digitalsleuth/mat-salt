@@ -1,4 +1,5 @@
 include:
+  - mat.scripts.android_triage
   - mat.scripts.androguard-report
   - mat.scripts.binarycookiereader
   - mat.scripts.cheeky4n6monkey
@@ -17,6 +18,7 @@ include:
 mat-scripts:
   test.nop:
     - require:
+      - sls: mat.scripts.android_triage
       - sls: mat.scripts.androguard-report
       - sls: mat.scripts.binarycookiereader
       - sls: mat.scripts.cheeky4n6monkey

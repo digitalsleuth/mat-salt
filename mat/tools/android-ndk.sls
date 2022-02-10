@@ -6,8 +6,8 @@
 # License:
 # Notes:
 
-{% set prev_version = "android-ndk-r21d-linux-x86_64.zip" %}
-{% set curr_version = "android-ndk-r22b-linux-x86_64.zip" %}
+{% set prev_version = "android-ndk-r22d-linux-x86_64.zip" %}
+{% set curr_version = "android-ndk-r23b-linux.zip" %}
 {% set user = salt['pillar.get']('mat_user', 'mat') %}
 
 {% if user == "root" %}
@@ -23,7 +23,7 @@ mat-tools-android-ndk-source:
   file.managed:
     - name: /usr/local/src/mat/files/{{ curr_version }}
     - source: https://dl.google.com/android/repository/{{ curr_version }}
-    - source_hash: sha256=ac3a0421e76f71dd330d0cd55f9d99b9ac864c4c034fc67e0d671d022d4e806b
+    - source_hash: sha256=c6e97f9c8cfe5b7be0a9e6c15af8e7a179475b7ded23e2d1c1fa0945d6fb4382
     - makedirs: True
 
 mat-tools-android-ndk-archive:

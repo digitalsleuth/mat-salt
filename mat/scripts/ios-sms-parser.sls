@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Name: iOS_sms_parser
+# Website: https://github.com/digitalsleuth/iOS_sms_parser
+# Description: sms.db parser for iOS 7-11.3
+# Category: iOS
+# Author: Heather Mahalik (maintained by digitalsleuth)
+# License: GNU GPL v3 (https://github.com/digitalsleuth/iOS_sms_parser/blob/master/LICENSE)
+# Notes: iOS_sms_parser
 
 include:
   - mat.apt-packages.python3

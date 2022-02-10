@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Name: itunes_backup2hashcat
+# Website: https://github.com/philsmd/itunes_backup2hashcat
+# Description: Convert iOS Manifest.plist hashes to hashcat
+# Category: iOS
+# Author: philsmd
+# License: Public Domain (https://github.com/philsmd/itunes_backup2hashcat#licensedisclaimer)
+# Notes: itunes_backup2hashcat
 
 include:
   - mat.apt-packages.perl

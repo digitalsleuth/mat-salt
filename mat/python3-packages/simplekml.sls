@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Name: simplekml
+# Website: https://readthedocs.org/projects/simplekml/
+# Description: KML file generator
+# Category: System
+# Author: Kyle Lancaster, Patrick Eisoldt
+# License: GNU GPLv3 (https://github.com/eisoldt/simplekml/blob/master/LICENSE.txt)
+# Notes: simplekml
 
 include:
   - mat.apt-packages.python3-pip

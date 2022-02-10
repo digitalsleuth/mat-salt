@@ -1,9 +1,9 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
+# Name: Androwarn
+# Website: https://github.com/digitalsleuth/androwarn
+# Description: Static code analyzer for Android applications
+# Category: Android
+# Author: digitalsleuth (original author maaaaz)
+# License: GNU GPL v3 (https://github.com/digitalsleuth/androwarn/blob/master/androwarn/COPYING)
 # Notes: 
 
 include:

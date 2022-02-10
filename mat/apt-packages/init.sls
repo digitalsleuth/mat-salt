@@ -2,7 +2,6 @@ include:
   - mat.apt-packages.android-tools-adb
   - mat.apt-packages.android-project-creator
   - mat.apt-packages.automake
-  - mat.apt-packages.baksmali
   - mat.apt-packages.bison
   - mat.apt-packages.build-essential
   - mat.apt-packages.cherrytree
@@ -60,7 +59,6 @@ mat-apt-packages:
       - sls: mat.apt-packages.android-tools-adb
       - sls: mat.apt-packages.android-project-creator
       - sls: mat.apt-packages.automake
-      - sls: mat.apt-packages.baksmali
       - sls: mat.apt-packages.bison
       - sls: mat.apt-packages.build-essential
       - sls: mat.apt-packages.cherrytree

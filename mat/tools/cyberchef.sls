@@ -6,8 +6,8 @@
 # License: 
 # Notes: 
 
-{% set version = "9.21.0" -%}
-{% set hash = "5a53c4e0bee1303ef73210a6e2fbb3f5151d4ad09cc3681581c6c35b15584126" -%}
+{% set version = "9.32.3" -%}
+{% set hash = "465cf64bdd80cf99be72bedc9dccf7fcebaeace58d77ec62d71733c3e2ba404f" -%}
 
 include:
   - mat.apt-packages.firefox

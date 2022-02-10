@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Name: apkid
+# Website: https://github.com/rednaga/APKiD
+# Description: PEID for Android
+# Category: Android
+# Author: https://github.com/rednaga/APKiD/blob/master/AUTHORS.txt
+# License: GNU GPL v3 (https://github.com/rednaga/APKiD/blob/master/LICENSE.GPL)
+# Notes: apkid
 
 include:
   - mat.apt-packages.python3-pip

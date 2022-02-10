@@ -1,9 +1,9 @@
 # Name: yara-python
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
+# Website: https://github.com/VirusTotal/yara-python
+# Description: Python interface for YARA
+# Category: System
+# Author: Victor M. Alvarez
+# License: Apache License 2.0 (https://github.com/VirusTotal/yara-python/blob/master/LICENSE)
 # Notes: 
 
 include:

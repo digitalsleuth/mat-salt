@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Name: sqlite_miner
+# Website: https://github.com/threeplanetssoftware/sqlite_miner
+# Description: Perl script to mine SQLite Databases for hidden data
+# Category: Scripts
+# Author: Jon Baumann
+# License: GNU GPLv3 (https://github.com/threeplanetssoftware/sqlite_miner/blob/master/LICENSE)
+# Notes: sqlite_miner.pl
 
 include:
   - mat.apt-packages.perl

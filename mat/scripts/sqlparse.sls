@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Name: SQLite Deleted Records Parser
+# Website: https://github.com/mdegrazia/SQLite-Deleted-Records-Parser
+# Description: Script to parse deleted records from an SQLite DB
+# Category: Scripts
+# Author: Mari DeGrazia
+# License: GNU GPLv3
+# Notes: sqlparse.py
 
 include:
   - mat.apt-packages.python2

@@ -6,8 +6,8 @@
 # License: MIT License (https://github.com/cryptax/droidlysis/blob/master/LICENSE)
 # Notes: droidlysis
 
-{% set apktool="apktool_2.4.1.jar" %}
-{% set baksmali="baksmali-2.4.0.jar" %}
+{% set apktool="apktool_2.6.0.jar" %}
+{% set baksmali="baksmali-2.5.2.jar" %}
 {% set procyon="procyon-decompiler-0.5.32.jar" %}
 
 {% if grains['oscodename'] == "bionic" %}
@@ -19,7 +19,7 @@ include:
   - mat.apt-packages.unzip
   - mat.tools.apktool
   - mat.apt-packages.python3-pip
-  - mat.apt-packages.baksmali
+  - mat.tools.baksmali
   - mat.apt-packages.dex2jar
   - mat.apt-packages.procyon-decompiler
   - mat.apt-packages.default-jre
@@ -32,7 +32,7 @@ mat-python3-packages-droidlysis:
       - sls: mat.apt-packages.unzip
       - sls: mat.tools.apktool
       - sls: mat.apt-packages.python3-pip
-      - sls: mat.apt-packages.baksmali
+      - sls: mat.tools.baksmali
       - sls: mat.apt-packages.dex2jar
       - sls: mat.apt-packages.procyon-decompiler
       - sls: mat.apt-packages.default-jre
@@ -41,7 +41,7 @@ mat-python3-packages-droidlysis-apktool-cfg:
   file.replace:
     - name: /usr/local/lib/{{ python3_version }}/dist-packages/droidconfig.py
     - pattern: '^APKTOOL_JAR.*$'
-    - repl: 'APKTOOL_JAR = os.path.join(os.path.expanduser("/usr/local/apktool"), "apktool_2.4.1.jar")'
+    - repl: 'APKTOOL_JAR = os.path.join(os.path.expanduser("/usr/local/apktool"), "apktool_2.6.0.jar")'
     - count: 1
     - prepend_if_not_found: False
     - require:
@@ -51,7 +51,7 @@ mat-python3-packages-droidlysis-baksmali-cfg:
   file.replace:
     - name: /usr/local/lib/{{ python3_version }}/dist-packages/droidconfig.py
     - pattern: '^BAKSMALI_JAR.*$'
-    - repl: 'BAKSMALI_JAR = os.path.join(os.path.expanduser("/opt/baksmali"), "baksmali-2.4.0.jar")'
+    - repl: 'BAKSMALI_JAR = os.path.join(os.path.expanduser("/opt/baksmali"), "baksmali-2.5.2.jar")'
     - count: 1
     - prepend_if_not_found: False
     - require:

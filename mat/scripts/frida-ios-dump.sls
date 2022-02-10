@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Name: frida-ios-dump
+# Website: https://github.com/AloneMonkey/frida-ios-dump
+# Description: Pull Decrypted IPA from jailbroken IOS device
+# Category: iOS
+# Author: AloneMonkey
+# License: MIT (https://github.com/AloneMonkey/frida-ios-dump/blob/master/LICENSE)
+# Notes: frida-ios-dump
 
 include:
   - mat.apt-packages.python3-pip

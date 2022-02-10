@@ -1,9 +1,9 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
+# Name: download_androguard_report
+# Website: https://github.com/Koodous/androguard-yara/blob/master/download_androguard_report.py
+# Description: Downloads an Androguard Report from Koodous
+# Category: Android
+# Author: Antonio Sanchez
+# License: Apache License 2.0 (https://github.com/Koodous/androguard-yara/blob/master/LICENSE)
 # Notes: 
 
 include:

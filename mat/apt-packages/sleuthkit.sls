@@ -1,7 +1,7 @@
 {%- set base_url = "https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-" -%}
-{%- set version = "4.10.1" -%}
-{%- set filename = "sleuthkit-4.10.1.tar.gz" -%}
-{%- set hash = "65c3f701f046f012feba78452a50f1307948a1038474eaf8e296f65031604a0a" -%}
+{%- set version = "4.11.1" -%}
+{%- set filename = "sleuthkit-4.11.1.tar.gz" -%}
+{%- set hash = "8ad94f5a69b7cd1a401afd882ab6b8e5daadb39dd2a6a3bbd5aecee2a2ea57a0" -%}
 
 # Name: SleuthKit
 # Website: https://www.sleuthkit.org/sleuthkit

@@ -1,11 +1,11 @@
 {%- set move_scripts = ["compare_apks.py","cromosome.py","feed.py","feed.sh","new_detections.py","pykoodous.py","scan_device.py","search.py","unpack_apk.py"] -%}
-# Name:
-# Website:
-# Description: 
-# Category: 
-# Author: 
-# License: 
-# Notes: 
+# Name: koodous-scripts
+# Website: https://github.com/Koodous/Scripts
+# Description: Koodo API usage example scripts
+# Category: Android
+# Author: Koodous, A. Sánchez
+# License: Apache 2.0 
+# Notes: compare_apks.py, cromosome.py, feed.py, feed.sh, new_detections.py, pykoodous.py, scan_device.py, search.py, unpack_apk.py
 
 include:
   - mat.apt-packages.git

@@ -1,9 +1,9 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
+# Name: objection
+# Website: https://github.com/sensepost/objection
+# Description: Runtime Mobile Exploration
+# Category: Android, iOS
+# Author: Leon Jacobs, SensePost
+# License: GNU GPL v3 (https://github.com/sensepost/objection/blob/master/LICENSE)
 # Notes: 
 
 include:

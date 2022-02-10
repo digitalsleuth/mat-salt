@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Name: kobackupdec
+# Website: https://github.com/RealityNet/kobackupdec
+# Description: Huawei Backup Decryptor
+# Category: Android
+# Author: Francesco Picasso
+# License: MIT (https://github.com/RealityNet/kobackupdec/blob/master/LICENSE)
+# Notes: kobackupdec
 
 include:
   - mat.python3-packages.pycryptodome

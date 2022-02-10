@@ -1,9 +1,9 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
+# Name: dnslib
+# Website: https://github.com/paulc/dnslib
+# Description: Python DNS Library
+# Category: Network
+# Author: Paul Chakravarti
+# License: BSD 2-Clause Simplified (https://github.com/paulc/dnslib/blob/master/LICENSE)
 # Notes: 
 
 include:

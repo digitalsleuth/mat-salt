@@ -7,6 +7,7 @@ include:
   - mat.tools.apple-cloud-notes-parser
   - mat.tools.axmlprinter
   - mat.tools.axmlprinter2
+  - mat.tools.baksmali
   - mat.tools.burpsuite-community
   - mat.tools.bytecode-viewer
   - mat.tools.cfr
@@ -44,6 +45,7 @@ mat-tools:
       - sls: mat.tools.apple-cloud-notes-parser
       - sls: mat.tools.axmlprinter
       - sls: mat.tools.axmlprinter2
+      - sls: mat.tools.baksmali
       - sls: mat.tools.burpsuite-community
       - sls: mat.tools.bytecode-viewer
       - sls: mat.tools.cfr

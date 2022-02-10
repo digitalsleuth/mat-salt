@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Name: binarycookiereader.py
+# Website: https://github.com/digitalsleuth/BinaryCookieReader
+# Description: A tool to read the binarycookie format of Cookies on iOS applications
+# Category: iOS
+# Author: Satishb3
+# License: Free, Unknown License
+# Notes: binarycookiereader.py
 
 mat-scripts-binarycookiereader:
   file.managed:

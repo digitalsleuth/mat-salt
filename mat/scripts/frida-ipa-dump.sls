@@ -1,10 +1,10 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
-# Notes: 
+# Name: frida-ipa-dump
+# Website: https://github.com/integrity-sa/frida-ipa-dump
+# Description: Frida based IPA-dump decrypter
+# Category: iOS
+# Author: Integrity-SA (original ChiChou)
+# License: MIT (https://github.com/integrity-sa/frida-ipa-dump/blob/master/LICENSE)
+# Notes: frida-ipa-dump
 
 include:
   - mat.apt-packages.python3

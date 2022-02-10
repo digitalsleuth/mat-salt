@@ -1,9 +1,9 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
+# Name: protobuf-inspector
+# Website: https://github.com/mildsunrise/protobuf-inspector
+# Description: Tool to reverse engineer Protocol Buffers
+# Category: Android
+# Author: Alba Mendez
+# License: ISC (https://github.com/mildsunrise/protobuf-inspector/blob/master/LICENSE)
 # Notes: 
 
 include:

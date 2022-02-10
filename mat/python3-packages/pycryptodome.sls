@@ -1,9 +1,9 @@
-# Name: 
-# Website: 
-# Description:
-# Category:
-# Author: 
-# License: 
+# Name: pycryptodome
+# Website: https://www.pycryptodome.org/en/latest/
+# Description: Python package of low-level cryptographic primitives
+# Category: Encryption
+# Author: Helder Eijs
+# License: Public Domain, BSD, OCB (https://github.com/Legrandin/pycryptodome/blob/master/LICENSE.rst)
 # Notes: 
 
 include:
