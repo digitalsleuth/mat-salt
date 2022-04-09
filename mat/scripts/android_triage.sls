@@ -13,7 +13,7 @@ mat-scripts-android-triage:
   file.managed:
     - name: /usr/local/bin/android_triage.sh
     - source: https://github.com/RealityNet/android_triage/raw/main/android_triage.sh
-    - source_hash: sha256=8d550635b444ac7f0e42fbad298ff8aacdeaa665cdefea62cdc598770ec6ffb1
+    - source_hash: sha256=079717d77d3d08578ba924c2ee152e6bd90a9bde2ff4e3e708f7de110f96ae14
     - mode: 755
     - require:
       - sls: mat.apt-packages.android-tools-adb
