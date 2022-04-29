@@ -14,6 +14,7 @@ mat-python3-packages-adb-shell:
     - names:
       - adb-shell
       - adb-shell[usb]
+    - upgrade: True
     - bin_env: /usr/bin/python3
     - require:
       - sls: mat.apt-packages.python3-pip

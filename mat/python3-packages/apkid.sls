@@ -20,9 +20,9 @@ mat-python3-packages-apkid-virtualenv:
     - venv_bin: /usr/bin/virtualenv
     - python: /usr/bin/python3
     - pip_pkgs:
-      - pip
+      - pip>=21.4.2
       - setuptools
-      - wheel
+      - wheel>=0.36
     - require:
       - sls: mat.apt-packages.python3-pip
       - sls: mat.apt-packages.python3-virtualenv
@@ -47,6 +47,7 @@ mat-python3-packages-apkid:
   pip.installed:
     - name: apkid
     - bin_env: /opt/apkid/bin/python3
+    - upgrade: True
     - require:
       - virtualenv: mat-python3-packages-apkid-virtualenv
       - cmd: mat-python3-packages-apkid-custom-yara-install

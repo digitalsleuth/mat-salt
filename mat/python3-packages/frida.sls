@@ -10,7 +10,14 @@ include:
   - mat.apt-packages.python3-pip
 
 mat-python3-packages-frida-install:
-  cmd.run:
-    - name: python3 -m pip install --upgrade frida-tools
+  pip.installed:
+    - name: frida-tools
+    - bin_env: /usr/bin/python3
+    - upgrade: True
     - require:
       - sls: mat.apt-packages.python3-pip
+
+#  cmd.run:
+#    - name: python3 -m pip install --upgrade frida-tools
+#    - require:
+#      - sls: mat.apt-packages.python3-pip

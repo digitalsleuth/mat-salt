@@ -10,6 +10,7 @@ include:
   - mat.apt-packages.python3-pip
   - mat.apt-packages.default-jre
   - mat.apt-packages.git
+  - mat.python3-packages.wheel
 
 mat-tools-openmf-source:
   git.cloned:
@@ -24,6 +25,7 @@ mat-tools-openmf-requirements:
     - bin_env: /usr/bin/python3
     - require:
       - sls: mat.apt-packages.python3-pip
+      - sls: mat.python3-packages.wheel
     - watch:
       - git: mat-tools-openmf-source
 

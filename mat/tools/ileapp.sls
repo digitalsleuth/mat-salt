@@ -10,6 +10,7 @@ include:
   - mat.apt-packages.python3-pip
   - mat.apt-packages.git
   - mat.apt-packages.python3-tk
+  - mat.python3-packages.wheel
 
 mat-tools-ileapp-source:
   git.cloned:
@@ -37,10 +38,12 @@ mat-tools-ileapp-requirements:
   pip.installed:
     - requirements: /usr/local/src/ileapp/requirements.txt
     - bin_env: /usr/bin/python3
+    - upgrade: True
     - require:
       - sls: mat.apt-packages.python3-pip
       - sls: mat.apt-packages.python3-tk
       - file: mat-tools-ileapp-requirements-mod
+      - sls: mat.python3-packages.wheel
 
 mat-tools-ileapp-py-shebang:
   file.prepend:
