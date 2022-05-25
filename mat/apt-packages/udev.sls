@@ -1,0 +1,2 @@
+udev:
+  pkg.installed

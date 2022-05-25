@@ -27,6 +27,7 @@ include:
   - mat.tools.jadx
   - mat.tools.java-adb-remote-screen
   - mat.tools.jd-gui
+  - mat.tools.libimobile
   - mat.tools.openmf
 #  - mat.tools.pvrtextools
   - mat.tools.simplify
@@ -65,6 +66,7 @@ mat-tools:
       - sls: mat.tools.jadx
       - sls: mat.tools.java-adb-remote-screen
       - sls: mat.tools.jd-gui
+      - sls: mat.tools.libimobile
       - sls: mat.tools.openmf
 #      - sls: mat.tools.pvrtextools
       - sls: mat.tools.simplify

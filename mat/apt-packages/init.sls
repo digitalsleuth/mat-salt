@@ -12,18 +12,13 @@ include:
   - mat.apt-packages.firefox
   - mat.apt-packages.flex
   - mat.apt-packages.git
-  - mat.apt-packages.ideviceinstaller
-  - mat.apt-packages.ifuse
-  - mat.apt-packages.libimobiledevice6
-  - mat.apt-packages.libimobiledevice-utils
   - mat.apt-packages.libjansson-dev
   - mat.apt-packages.libmagic-dev
-  - mat.apt-packages.libplist3
   - mat.apt-packages.libprotobuf-c-dev
+  - mat.apt-packages.libreadline-dev
   - mat.apt-packages.libssl-dev
   - mat.apt-packages.libswt-gtk-4-java
   - mat.apt-packages.libtool
-  - mat.apt-packages.libusbmuxd
   - mat.apt-packages.nodejs
   - mat.apt-packages.openssh
   - mat.apt-packages.perl
@@ -48,7 +43,6 @@ include:
   - mat.apt-packages.sudo
   - mat.apt-packages.super-analyzer
   - mat.apt-packages.unzip
-  - mat.apt-packages.usbmuxd
   - mat.apt-packages.virtualenv
   - mat.apt-packages.wireshark
   - mat.apt-packages.xdg-utils
@@ -69,18 +63,13 @@ mat-apt-packages:
       - sls: mat.apt-packages.firefox
       - sls: mat.apt-packages.flex
       - sls: mat.apt-packages.git
-      - sls: mat.apt-packages.ideviceinstaller
-      - sls: mat.apt-packages.ifuse
-      - sls: mat.apt-packages.libimobiledevice6
-      - sls: mat.apt-packages.libimobiledevice-utils
       - sls: mat.apt-packages.libjansson-dev
       - sls: mat.apt-packages.libmagic-dev
-      - sls: mat.apt-packages.libplist3
       - sls: mat.apt-packages.libprotobuf-c-dev
+      - sls: mat.apt-packages.libreadline-dev
       - sls: mat.apt-packages.libssl-dev
       - sls: mat.apt-packages.libswt-gtk-4-java
       - sls: mat.apt-packages.libtool
-      - sls: mat.apt-packages.libusbmuxd
       - sls: mat.apt-packages.nodejs
       - sls: mat.apt-packages.openssh
       - sls: mat.apt-packages.perl
@@ -105,7 +94,6 @@ mat-apt-packages:
       - sls: mat.apt-packages.sudo
       - sls: mat.apt-packages.super-analyzer
       - sls: mat.apt-packages.unzip
-      - sls: mat.apt-packages.usbmuxd
       - sls: mat.apt-packages.virtualenv
       - sls: mat.apt-packages.wireshark
       - sls: mat.apt-packages.xdg-utils

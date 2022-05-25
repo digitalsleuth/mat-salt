@@ -17,12 +17,13 @@ gsettings set org.gnome.desktop.screensaver primary-color "#1644B9"
 
 #Customization
 gsettings set com.gexperts.Tilix.Settings use-tabs 'true'
-dconf write /com/gexperts/Tilix/session-name \'${title}\'
+gsettings set com.gexperts.Tilix.Settings session-name '${title}'
+dconf write /com/gexperts/Tilix/session-name '${title}'
 gsettings set com.solus-project.budgie-raven show-power-strip 'true'
 gsettings set io.elementary.desktop.wingpanel.applications-menu enable-powerstrip 'true'
 gsettings set io.elementary.desktop.wingpanel.applications-menu use-category 'true'
-dconf write /net/launchpad/plank/docks/dock1/position \'left\'
-dconf write /net/launchpad/plank/docks/dock1/theme \'Transparent\'
+dconf write /net/launchpad/plank/docks/dock1/position \'bottom\'
+dconf write /net/launchpad/plank/docks/dock1/theme \'Gtk+\'
 dconf write /com/solus-project/budgie-panel/dark-theme true
 dconf write /com/solus-project/budgie-raven/show-mic-input-widget false
 dconf write /com/solus-project/budgie-raven/show-mpris-widget false

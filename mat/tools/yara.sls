@@ -1,8 +1,8 @@
-{% set prev_version="None" %}
-{% set curr_version="v4.0.2.zip" %}
+{% set prev_version="v4.0.2.zip" %}
+{% set curr_version="v4.2.1.zip" %}
 
-# Name: 
-# Website:
+# Name: yara
+# Website: https://github.com/VirusTotal/yara
 # Description: 
 # Category: 
 # Author: 
@@ -25,7 +25,7 @@ mat-tools-yara-source:
   file.managed:
     - name: /usr/local/src/mat/files/{{ curr_version }}
     - source: https://github.com/VirusTotal/yara/archive/{{ curr_version }}
-    - source_hash: sha256=d4a45e36b9a4bf39f2f5c4cefdb0345d161cd69a5ced7000a825b5e100f242cd
+    - source_hash: sha256=1cf16f884041760c3fd8c834e3b29ef183cf148095debc41d049d7fff6c83466
     - makedirs: True
 
 mat-tools-yara-archive:
@@ -36,39 +36,15 @@ mat-tools-yara-archive:
     - watch:
       - file: mat-tools-yara-source
 
-mat-tools-yara-androguard-module:
-  file.managed:
-    - name: /usr/local/src/yara-4.0.2/libyara/modules/androguard.c
-    - source: https://github.com/Koodous/androguard-yara/raw/master/androguard.c
-    - source_hash: sha256=0e89e4cb74bfbb8b532328d90ddcb46cee452c415a90df3137e8136f176d2502
-    - makedirs: false
-    - watch:
-      - archive: mat-tools-yara-archive
-
-/usr/local/src/yara-4.0.2/libyara/Makefile.am:
-  file.managed:
-    - source: salt://mat/files/yara/Makefile.am
-    - mode: 755
-    - replace: True
-    - watch: 
-      - file: mat-tools-yara-androguard-module
-
-/usr/local/src/yara-4.0.2/libyara/modules/module_list:
-  file.managed:
-    - source: salt://mat/files/yara/module_list
-    - mode: 755
-    - replace: True
-    - watch:
-      - file: mat-tools-yara-androguard-module
-
 mat-tools-yara-build:
   cmd.run:
-    - cwd: /usr/local/src/yara-4.0.2
+    - cwd: /usr/local/src/yara-4.2.1
     - name: |
         ./bootstrap.sh
         ./configure --enable-cuckoo --enable-dex --enable-magic
         make
         make install
+        ldconfig
     - require:
       - sls: mat.apt-packages.libjansson-dev
       - sls: mat.apt-packages.libmagic-dev
@@ -83,7 +59,7 @@ mat-tools-yara-build:
 
 mat-tools-yara-cleanup:
   file.absent:
-    - name: /usr/local/src/yara-4.0.2
+    - name: /usr/local/src/yara-4.2.1
     - watch:
       - cmd: mat-tools-yara-build
 
