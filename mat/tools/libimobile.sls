@@ -17,14 +17,6 @@ include:
   - mat.apt-packages.libreadline-dev
   - mat.apt-packages.libzip-dev
 
-remove-older-libimobile:
-  pkg.removed:
-    - names:
-      - libimobiledevice6
-      - libusbmuxd
-      - ideviceinstaller
-      - libimobiledevice-utils
-
 libimobile-directory:
   file.directory:
     - name: /usr/local/src/libimobile

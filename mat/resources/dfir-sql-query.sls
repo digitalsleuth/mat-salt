@@ -11,6 +11,12 @@ include:
   - mat.apt-packages.cherrytree
   - mat.config.user
 
+mat-resources-dfir-sql-query-folder:
+  git.config_set:
+    - name: safe.directory
+    - value: {{ home }}/references/dfir-sql-query
+    - global: True
+
 mat-resources-dfir-sql-query-source:
   git.cloned:
     - name: https://github.com/digitalsleuth/dfir-sql-query-repo.git
@@ -18,6 +24,7 @@ mat-resources-dfir-sql-query-source:
     - require:
       - sls: mat.apt-packages.git
       - sls: mat.config.user
+      - git: mat-resources-dfir-sql-query-folder
 
 mat-resources-dfir-sql-query-permissions:
   file.directory:

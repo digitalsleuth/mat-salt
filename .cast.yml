@@ -1,0 +1,21 @@
+release:
+  github:
+    owner: digitalsleuth
+    repository: mat-salt
+manifest:
+  version: 2
+  name: mat
+  modes:
+    - name: addon
+      state: mat.addon
+      default: true
+    - name: dedicated
+      state: mat.dedicated
+      default: false
+  supported_os:
+    - id: ubuntu
+      release: 20.04
+      codename: focal
+    - id: ubuntu
+      release: 18.04
+      codename: bionic
