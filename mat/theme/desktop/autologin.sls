@@ -21,6 +21,6 @@ mat-desktop-disable-lockout:
 mat-desktop-unlock-sessions:
   cmd.run:
     - name: 'loginctl unlock-sessions'
-      - require:
-        - cmd: mat-desktop-disable-lockout
+    - require:
+      - cmd: mat-desktop-disable-lockout
 
