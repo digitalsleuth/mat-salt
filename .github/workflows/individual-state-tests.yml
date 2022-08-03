@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        os: focal
+        os: [focal]
         state:
           - mat.python2-packages
           - mat.python3-packages
