@@ -7,7 +7,7 @@ This repo contains state files for use with SaltStack, which will allow you to i
 The purpose of these states is to install several forensic applications for conducting Mobile Forensics.
 
 The CLI can be found at https://github.com/digitalsleuth/mat-cli and will allow these states to be installed automatically. These states are configured for use with
-salt-minion 3001.
+SaltStack v3005.
 
 However, if you're looking to install these manually, you can run the following:
 
