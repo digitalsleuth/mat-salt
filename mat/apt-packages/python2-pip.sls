@@ -2,14 +2,6 @@ include:
   - mat.apt-packages.python2
   - mat.apt-packages.curl
 
-{%- if grains['oscodename'] == "bionic" %}
-mat-apt-packages-python2-pip:
-  pkg.installed:
-    - name: python-pip
-    - require:
-      - sls: mat.apt-packages.python2
-
-{%- elif grains['oscodename'] == "focal" %}
 mat-apt-packages-python2-pip-install-script:
   cmd.run:
     - name: curl -o /tmp/get-pip.py https://bootstrap.pypa.io/pip/2.7/get-pip.py
@@ -24,4 +16,3 @@ mat-apt-packages-python2-pip-install:
     - unless: which pip2
     - require:
       - cmd: mat-apt-packages-python2-pip-install-script
-{%- endif %}

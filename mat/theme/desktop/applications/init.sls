@@ -10,6 +10,11 @@ include:
   - mat.config.user
   - mat.tools.cyberchef
   - mat.tools.jadx
+  - mat.apt-packages.gnome-sushi
+  - mat.apt-packages.gnome-system-tools
+  - mat.apt-packages.gnome-shell-extensions
+  - mat.apt-packages.gnome-shell-extension-prefs
+  - mat.apt-packages.gnome-tweaks
 
 mat-theme-desktop-applications-config:
   file.managed:
@@ -30,10 +35,10 @@ mat-theme-desktop-applications-config-autostart:
       - user: mat-user-{{ user }}
       - file: mat-theme-desktop-applications-config
 
-mat-theme-desktop-applications-autostart-tilix:
+mat-theme-desktop-applications-autostart-terminal:
   file.copy:
-    - name: {{ home }}/.config/autostart/com.gexperts.Tilix.desktop
-    - source: /usr/share/applications/com.gexperts.Tilix.desktop
+    - name: {{ home }}/.config/autostart/org.gnome.Terminal.desktop
+    - source: /usr/share/applications/org.gnome.Terminal.desktop
     - require:
       - user: mat-user-{{ user }}
 
@@ -49,7 +54,13 @@ mat-theme-desktop-applications-merged-dir:
       - group
       - mode
     - watch:
-      - file: mat-theme-desktop-applications-autostart-tilix
+      - file: mat-theme-desktop-applications-autostart-terminal
+    - require:
+      - sls: mat.apt-packages.gnome-sushi
+      - sls: mat.apt-packages.gnome-system-tools
+      - sls: mat.apt-packages.gnome-shell-extensions
+      - sls: mat.apt-packages.gnome-shell-extension-prefs
+      - sls: mat.apt-packages.gnome-tweaks
 
 mat-theme-desktop-applications-menus:
   file.recurse:
@@ -100,3 +111,8 @@ mat-theme-desktop-applications-icons:
     - require:
       - sls: mat.tools.cyberchef
       - sls: mat.tools.jadx
+
+mat-theme-desktop-applications-firefox:
+  file.append:
+    - name: /etc/environment
+    - text: "MOZ_ENABLE_WAYLAND=1"

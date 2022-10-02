@@ -11,6 +11,7 @@ include:
   - mat.apt-packages.default-jre
   - mat.apt-packages.git
   - mat.python3-packages.wheel
+  - mat.apt-packages.libffi-dev
 
 mat-tools-openmf-source:
   git.cloned:
@@ -26,6 +27,7 @@ mat-tools-openmf-requirements:
     - require:
       - sls: mat.apt-packages.python3-pip
       - sls: mat.python3-packages.wheel
+      - sls: mat.apt-packages.libffi-dev
     - watch:
       - git: mat-tools-openmf-source
 

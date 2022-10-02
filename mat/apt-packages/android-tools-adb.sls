@@ -6,5 +6,17 @@
 # License: Google Custom License (https://developer.android.com/studio/terms)
 # Notes: adb
 
+{% if grains['oscodename'] == 'focal' %}
+
 android-tools-adb:
   pkg.installed
+
+adb:
+  pkg.installed
+
+{% elif grains['oscodename'] == 'jammy' %}
+
+adb:
+  pkg.installed
+
+{% endif %}

@@ -1,13 +1,13 @@
 include:
   - mat.apt-packages.android-tools-adb
-  - mat.apt-packages.android-project-creator
+#  - mat.apt-packages.android-project-creator
   - mat.apt-packages.automake
   - mat.apt-packages.bison
   - mat.apt-packages.build-essential
   - mat.apt-packages.cherrytree
   - mat.apt-packages.curl
+  - mat.apt-packages.dbus-x11
   - mat.apt-packages.default-jre
-  - mat.apt-packages.dex2jar
   - mat.apt-packages.docker
   - mat.apt-packages.firefox
   - mat.apt-packages.flex
@@ -51,14 +51,14 @@ mat-apt-packages:
   test.nop:
     - require:
       - sls: mat.apt-packages.android-tools-adb
-      - sls: mat.apt-packages.android-project-creator
+#      - sls: mat.apt-packages.android-project-creator
       - sls: mat.apt-packages.automake
       - sls: mat.apt-packages.bison
       - sls: mat.apt-packages.build-essential
       - sls: mat.apt-packages.cherrytree
       - sls: mat.apt-packages.curl
+      - sls: mat.apt-packages.dbus-x11
       - sls: mat.apt-packages.default-jre
-      - sls: mat.apt-packages.dex2jar
       - sls: mat.apt-packages.docker
       - sls: mat.apt-packages.firefox
       - sls: mat.apt-packages.flex

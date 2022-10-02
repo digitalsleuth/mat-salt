@@ -1,2 +1,2 @@
-nemo:
+libffi-dev:
   pkg.installed

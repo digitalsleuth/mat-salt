@@ -13,7 +13,7 @@ include:
 mat-config-android-ndk-bashrc:
   file.append:
     - name: {{ home }}/.bashrc
-    - text: 'export ANDROID_NDK=/usr/local/android-ndk-r21d'
+    - text: 'export ANDROID_NDK=/usr/local/android-ndk-r23b'
     - require:
       - user: mat-user-{{ user }}
       - sls: mat.tools.android-ndk

@@ -1,2 +1,2 @@
-nemo:
+gnome-sushi:
   pkg.installed

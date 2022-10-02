@@ -16,11 +16,11 @@ include:
   - mat.tools.cutter
   - mat.tools.cyberchef
   - mat.tools.datcon
+  - mat.tools.dex2jar
   - mat.tools.eclipse
   - mat.tools.enjarify
   - mat.tools.flexdecrypt
   - mat.tools.ghidra
-  - mat.tools.heimdall
   - mat.tools.ileapp
   - mat.tools.impactor
   - mat.tools.jad
@@ -55,11 +55,11 @@ mat-tools:
       - sls: mat.tools.cutter
       - sls: mat.tools.cyberchef
       - sls: mat.tools.datcon
+      - sls: mat.tools.dex2jar
       - sls: mat.tools.eclipse
       - sls: mat.tools.enjarify
       - sls: mat.tools.flexdecrypt
       - sls: mat.tools.ghidra
-      - sls: mat.tools.heimdall
       - sls: mat.tools.ileapp
       - sls: mat.tools.impactor
       - sls: mat.tools.jad

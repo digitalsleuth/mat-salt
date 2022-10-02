@@ -6,9 +6,11 @@
 # License: GNU General Public License (GPL) v3 (https://github.com/java-decompiler/jd-gui/blob/master/LICENSE)
 # Notes: jd-gui
 
+{% set version = '1.6.6' %}
+{% set hash = '8bfa359653002346d4e370e7e8e12805b6f8e114ff83093944c6c3cdb1d71732' %}
+
 include:
   - mat.apt-packages.xdg-utils
-  - mat.repos.remnux
 
 mat-xdg-directory-create:
   file.directory:
@@ -22,5 +24,16 @@ mat-xdg-directory-create:
     - watch:
       - sls: mat.apt-packages.xdg-utils
 
+mat-jd-gui-download:
+  file.managed:
+    - name: /usr/local/src/mat/files/jd-gui-{{ version }}.deb
+    - source: https://github.com/java-decompiler/jd-gui/releases/download/v{{ version }}/jd-gui-{{ version }}.deb
+    - source_hash: sha256={{ hash }}
+    - makedirs: True
+
 jd-gui:
-  pkg.installed
+  pkg.installed:
+    - sources:
+      - jd-gui: /usr/local/src/mat/files/jd-gui-{{ version }}.deb
+    - watch:
+      - file: mat-jd-gui-download

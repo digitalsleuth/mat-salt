@@ -10,8 +10,8 @@
 {% set baksmali="baksmali-2.5.2.jar" %}
 {% set procyon="procyon-decompiler-0.5.32.jar" %}
 
-{% if grains['oscodename'] == "bionic" %}
-  {% set python3_version="python3.6" %}
+{% if grains['oscodename'] == "jammy" %}
+  {% set python3_version="python3.10" %}
 {% elif grains['oscodename'] == "focal" %}
   {% set python3_version="python3.8" %}
 {% endif %}
@@ -20,7 +20,7 @@ include:
   - mat.tools.apktool
   - mat.apt-packages.python3-pip
   - mat.tools.baksmali
-  - mat.apt-packages.dex2jar
+  - mat.tools.dex2jar
   - mat.apt-packages.procyon-decompiler
   - mat.apt-packages.default-jre
 
@@ -33,7 +33,7 @@ mat-python3-packages-droidlysis:
       - sls: mat.tools.apktool
       - sls: mat.apt-packages.python3-pip
       - sls: mat.tools.baksmali
-      - sls: mat.apt-packages.dex2jar
+      - sls: mat.tools.dex2jar
       - sls: mat.apt-packages.procyon-decompiler
       - sls: mat.apt-packages.default-jre
 

@@ -1,37 +1,57 @@
 #!/bin/bash
 
 #Disabling Event Sounds for the system
-gsettings set org.gnome.desktop.sound event-sounds 'false'
-gsettings set org.gnome.desktop.sound input-feedback-sounds 'false'
+gsettings set org.gnome.desktop.sound event-sounds false
+gsettings set org.gnome.desktop.sound input-feedback-sounds false
 
 #Disabling inactivity timers and screensavers
 gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
-gsettings set org.gnome.desktop.screensaver lock-enabled 'false'
+gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 #Setup color/font scheme
-gsettings set org.gnome.desktop.background picture-uri 'file:///usr/local/share/mat/mat-logo.png'
-gsettings set org.gnome.desktop.background picture-options "scaled"
+gsettings set org.gnome.shell enabled-extensions "['ubuntu-appindicators@ubuntu.com', 'ubuntu-dock@ubuntu.com', 'desktop-icons@csoriano', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']"
+
+if [[ $(lsb_release -c -s) == jammy ]]; then
+  gsettings set org.gnome.desktop.background picture-uri 'file:///usr/local/share/mat/mat-logo.png'
+  gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/local/share/mat/mat-logo.png'
+  gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+  gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-blue-dark'
+  gsettings set org.gnome.desktop.interface icon-theme 'Yaru-blue-dark'
+  gsettings set org.gnome.shell favorite-apps "['cyberchef.desktop', 'sqlitebrowser.desktop', 'burpsuite.desktop', 'org.gnome.Terminal.desktop', 'jd-qui.desktop', 'cherrytree.desktop', 'org.gnome.Nautilus.desktop', 'firefox_firefox.desktop']"
+
+elif [[ $(lsb_release -c -s) == focal ]]; then
+  gsettings set org.gnome.desktop.background draw-background false
+  gsettings set org.gnome.desktop.background primary-color '#1644b9'
+  gsettings set org.gnome.desktop.background secondary-color '#1644b9'
+  gsettings set org.gnome.desktop.background color-shading-type 'solid'
+  gsettings set org.gnome.desktop.background picture-uri 'file:///usr/local/share/mat/mat-logo.png'
+  gsettings set org.gnome.desktop.background draw-background true
+  gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+  gsettings set org.gnome.desktop.interface icon-theme 'Yaru'
+  gsettings set org.gnome.shell favorite-apps "['cyberchef.desktop', 'sqlitebrowser.desktop', 'burpsuite.desktop', 'org.gnome.Terminal.desktop', 'jd-qui.desktop', 'cherrytree.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop']"
+  gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-dark'
+
+fi
+gsettings set org.gnome.desktop.background picture-options "zoom"
 gsettings set org.gnome.desktop.background primary-color "#1644B9"
 gsettings set org.gnome.desktop.screensaver primary-color "#1644B9"
 
 #Customization
-gsettings set com.gexperts.Tilix.Settings use-tabs 'true'
-gsettings set com.gexperts.Tilix.Settings session-name '${title}'
-dconf write /com/gexperts/Tilix/session-name '${title}'
-gsettings set com.solus-project.budgie-raven show-power-strip 'true'
-gsettings set io.elementary.desktop.wingpanel.applications-menu enable-powerstrip 'true'
-gsettings set io.elementary.desktop.wingpanel.applications-menu use-category 'true'
-dconf write /net/launchpad/plank/docks/dock1/position \'bottom\'
-dconf write /net/launchpad/plank/docks/dock1/theme \'Gtk+\'
-dconf write /com/solus-project/budgie-panel/dark-theme true
-dconf write /com/solus-project/budgie-raven/show-mic-input-widget false
-dconf write /com/solus-project/budgie-raven/show-mpris-widget false
-dconf write /com/solus-project/budgie-raven/show-sound-output-widget false
-
-#Remove excess plank icons which appear on first login
-rm ~/.config/plank/dock1/launchers/org.gnome.Software.dockitem
-rm ~/.config/plank/dock1/launchers/libreoffice-calc.dockitem
-rm ~/.config/plank/dock1/launchers/libreoffice-writer.dockitem
-rm ~/.config/plank/dock1/launchers/org.gnome.Geary.desktop
-
+gsettings set org.gnome.Terminal.Legacy.Settings theme-variant 'dark'
+gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-customize-running-dots true
+gsettings set org.gnome.shell.extensions.dash-to-dock running-indicator-style 'DASHES'
+gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-color '#729fcf'
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 36
+gsettings set org.gnome.shell.extensions.dash-to-dock apply-glossy-effect false
+gsettings set org.gnome.shell.extensions.dash-to-dock autohide false
+gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0
+gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
+gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
+gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts true
+gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts-network true
+gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts-only-mounted true
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
+gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode 'FIXED'
+gsettings set org.gnome.desktop.interface enable-animations false
