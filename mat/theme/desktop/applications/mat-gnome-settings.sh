@@ -41,7 +41,7 @@ gsettings set org.gnome.desktop.screensaver primary-color "#1644B9"
 gsettings set org.gnome.Terminal.Legacy.Settings theme-variant 'dark'
 gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-customize-running-dots true
 gsettings set org.gnome.shell.extensions.dash-to-dock running-indicator-style 'DASHES'
-gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-color '#729fcf'
+gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-color '#A40000'
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 36
 gsettings set org.gnome.shell.extensions.dash-to-dock apply-glossy-effect false
@@ -55,3 +55,4 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts-only-mounted t
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode 'FIXED'
 gsettings set org.gnome.desktop.interface enable-animations false
+rm /home/$(whoami)/.config/autostart/mat-gnome-settings.desktop
