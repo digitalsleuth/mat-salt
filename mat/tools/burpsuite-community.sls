@@ -6,8 +6,8 @@
 # License: Free, custom license (https://portswigger.net/burp/tc-community)
 # Notes: burpsuite
 
-{% set version = '2022.8.4' %}
-{% set hash = '375a236c87c4c44bfcb00299036c50ed8af595a9576bb586d373c0b497014383' %}
+{% set version = '2022.8.5' %}
+{% set hash = 'C9B33AE237BF33C1DC0FE68B029FDFBE092BBA39FE96ED376AD10A1E287E113D' %}
 
 include:
   - mat.apt-packages.default-jre
