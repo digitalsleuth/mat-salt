@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@main
       - name: Check Burpsuite Hash
         run: |
-          wget -O burpsuite_community.sh 'https://portswigger-cdn.net/burp/releases/download?product=community&version={{ version }}&type=Linux'
+          wget -O burpsuite_community.sh 'https://portswigger-cdn.net/burp/releases/download?product=community&version=2022.8.5&type=Linux'
           PREVIOUS_HASH=$(cat /home/runner/work/mat-salt/mat-salt/mat/tools/burpsuite-community.sls | grep "set hash" | awk -F\' '{print $2}')
           CURRENT_HASH=$(sha256sum burpsuite_community.sh | awk '{print $1}')
           if [[ "$PREVIOUS_HASH" != "$CURRENT_HASH" ]]; then echo "HASH UPDATED - $CURRENT_HASH" && exit 1; else echo "No hash changes" && exit 0; fi
