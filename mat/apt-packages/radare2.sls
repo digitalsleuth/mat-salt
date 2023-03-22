@@ -3,8 +3,10 @@
 # Description: Examine binary files, including disassembling and debugging.
 # Category: 
 # Author: https://github.com/radareorg/radare2/blob/master/AUTHORS.md
-# License: GNU Lesser General Public License (LGPL) v3 (https://github.com/radareorg/radare2/blob/master/COPYING)
+# License: GNU Lesser General Public License v3.0 (https://github.com/radareorg/radare2/blob/master/COPYING)
+# Version: 5.6.8
 # Notes: r2, rasm2, rabin2, rahash2, rafind2
+
 {% set version = '5.6.8' %}
 {% set hash = '7af2fa605f00e1ae740db7dba2c0b8bc6c44e2eea3027cc7795ec46bf0292d2e' %}
 

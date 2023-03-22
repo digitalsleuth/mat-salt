@@ -25,6 +25,7 @@ mat-tools-ghidra-archive:
     - name: /usr/local/
     - source: /usr/local/src/mat/files/{{ curr_version }}
     - enforce_toplevel: true
+    - trim_output: True
     - watch:
       - file: mat-tools-ghidra-source
 

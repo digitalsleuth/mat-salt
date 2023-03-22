@@ -26,6 +26,7 @@ mat-tools-android-studio-archive:
     - name: /usr/local/
     - source: /usr/local/src/mat/files/{{ zip }}
     - enforce_toplevel: True
+    - trim_output: True
     - watch:
       - file: mat-tools-android-studio-source
     - require:

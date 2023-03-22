@@ -1,9 +1,10 @@
 # Name: cherrytree
 # Website: https://www.giuspen.com
 # Description: Note taking application
-# Category:
+# Category: Documentation
 # Author: Giuseppe Penone
 # License: GNU General Public License v3.0+ (https://github.com/giuspen/cherrytree/blob/master/license.txt)
+# Version: 0.99.53
 # Notes: cherrytree
 
 include:

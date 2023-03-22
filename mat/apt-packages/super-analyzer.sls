@@ -1,9 +1,10 @@
 # Name: super-android-analyzer
 # Website: https://github.com/SUPERAndroidAnalyzer/super
 # Description: Vulnerability assessment tool for Android Applications
-# Category: 
+# Category: Android
 # Author: Iban Equia (https://medium.com/@Razican)
 # License: GNU General Public License v3.0 (https://github.com/SUPERAndroidAnalyzer/super/blob/master/LICENSE)
+# Version: 0.5.1
 # Notes: super-analyzer
 
 mat-apt-packages-super-analyzer:

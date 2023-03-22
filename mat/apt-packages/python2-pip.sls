@@ -1,3 +1,12 @@
+# Name: python2-pip
+# Website: https://python.org
+# Description: Package installer for Python 2 programming language
+# Category: Programming
+# Author: Python Software Foundation
+# License: Python Software Foundation (https://docs.python.org/2.7/license.html)
+# Version: 20.3.4
+# Notes: Python 2 is deprecated as of Jan 2020
+
 include:
   - mat.apt-packages.python2
   - mat.apt-packages.curl

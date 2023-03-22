@@ -5,6 +5,7 @@ release:
 manifest:
   version: 2
   name: mat
+  base_dir: mat
   modes:
     - name: addon
       state: mat.addon
@@ -14,8 +15,14 @@ manifest:
       default: false
   supported_os:
     - id: ubuntu
+      release: 22.04
+      codename: jammy
+    - id: ubuntu
       release: 20.04
       codename: focal
     - id: ubuntu
       release: 18.04
       codename: bionic
+  saltstack:
+    pillars:
+      mat_user_template: "{{ .User }}"
