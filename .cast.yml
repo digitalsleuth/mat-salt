@@ -1,7 +1,7 @@
 release:
   github:
     owner: digitalsleuth
-    repository: mat-salt
+    repo: mat-salt
 manifest:
   version: 2
   name: mat
@@ -20,9 +20,6 @@ manifest:
     - id: ubuntu
       release: 20.04
       codename: focal
-    - id: ubuntu
-      release: 18.04
-      codename: bionic
   saltstack:
     pillars:
       mat_user_template: "{{ .User }}"
