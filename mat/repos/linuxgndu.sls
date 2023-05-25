@@ -1,7 +1,17 @@
+mat-linuxgndu-key:
+  file.managed:
+    - name: /usr/share/keyrings/LINUXGNDU-GPG.asc
+    - source: https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xb0c3f48a7f2583ea
+    - skip_verify: True
+    - makedirs: True
+
 linuxgndu:
   pkgrepo.managed:
     - humanname: linuxgndu
-    - ppa: linuxgndu/sqlitebrowser
+    - name: deb [arch=amd64 signed-by=/usr/share/keyrings/LINUXGNDU-GPG.asc] https://ppa.launchpadcontent.net/linuxgndu/sqlitebrowser/ubuntu {{ grains['lsb_distrib_codename'] }} main
+    - dist: {{ grains['lsb_distrib_codename'] }}
+    - file: /etc/apt/sources.list.d/linuxgndu.list
     - refresh: True
-    - key_url: salt://mat/repos/keys/LINUXGNDU-GPG-KEY.asc
-    - gpgcheck: 1
+    - clean_file: True
+    - require:
+      - file: mat-linuxgndu-key

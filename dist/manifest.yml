@@ -1,0 +1,19 @@
+version: 2
+name: mat
+base_dir: mat
+modes:
+    - name: addon
+      state: mat.addon
+      default: true
+    - name: dedicated
+      state: mat.dedicated
+saltstack:
+    pillars:
+        mat_user_template: '{{ .User }}'
+supported_os:
+    - id: ubuntu
+      release: "22.04"
+      codename: jammy
+    - id: ubuntu
+      release: "20.04"
+      codename: focal

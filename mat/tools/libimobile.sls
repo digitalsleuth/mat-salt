@@ -42,6 +42,7 @@ clone-{{ repo }}:
   git.latest:
     - name: {{ repo_base }}/{{ repo }}
     - target: /usr/local/src/libimobile/{{ repo }}
+    - force_reset: True
     - require:
       - sls: mat.apt-packages.git
 
@@ -83,4 +84,3 @@ make-install-{{ repo }}:
 
 ldconfig:
   cmd.run
- 
